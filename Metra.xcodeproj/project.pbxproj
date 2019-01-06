@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */; };
+		C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751B14E21DCA70800167A68 /* RoundedButton.swift */; };
+		C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778EA0E21D94CA600D5F69C /* LoginVC.swift */; };
+		C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */; };
+		C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520B21D95E42005E48B5 /* WelcomeVC.swift */; };
+		C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520D21D95E83005E48B5 /* RegisterVC.swift */; };
+		C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C521021D9F1E5005E48B5 /* Constants.swift */; };
+		C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3E98A21D34B1300B3BD58 /* AppDelegate.swift */; };
+		C7F3E98D21D34B1300B3BD58 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3E98C21D34B1300B3BD58 /* RestaurantVC.swift */; };
+		C7F3E99021D34B1300B3BD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E98E21D34B1300B3BD58 /* Main.storyboard */; };
+		C7F3E99221D34B1400B3BD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E99121D34B1400B3BD58 /* Assets.xcassets */; };
+		C7F3E99521D34B1400B3BD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E99321D34B1400B3BD58 /* LaunchScreen.storyboard */; };
+		C7F3E9A121D3523700B3BD58 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E9A021D3523700B3BD58 /* art.scnassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD4A75E23985DFAF612FBB7 /* Pods-restaurantArdyia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.debug.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.debug.xcconfig"; sourceTree = "<group>"; };
+		214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurantArdyia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.release.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.release.xcconfig"; sourceTree = "<group>"; };
+		C751B14E21DCA70800167A68 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C778EA0E21D94CA600D5F69C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C79C520B21D95E42005E48B5 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		C79C520D21D95E83005E48B5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		C79C521021D9F1E5005E48B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7F3E98721D34B1300B3BD58 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F3E98A21D34B1300B3BD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7F3E98C21D34B1300B3BD58 /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
+		C7F3E98F21D34B1300B3BD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7F3E99121D34B1400B3BD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7F3E99421D34B1400B3BD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7F3E99621D34B1400B3BD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F3E9A021D3523700B3BD58 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F3E98421D34B1300B3BD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653869BB2B5F217F3FF04632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DD4A75E23985DFAF612FBB7 /* Pods-restaurantArdyia.debug.xcconfig */,
+				C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C751B14D21DCA6E700167A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C751B14E21DCA70800167A68 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C79C520F21D9F1D5005E48B5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C79C521021D9F1E5005E48B5 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C7F3E97E21D34B1300B3BD58 = {
+			isa = PBXGroup;
+			children = (
+				C7F3E98921D34B1300B3BD58 /* Metra */,
+				C7F3E98821D34B1300B3BD58 /* Products */,
+				653869BB2B5F217F3FF04632 /* Pods */,
+				FAB698F6D8CFCEA5F5F937A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F3E98821D34B1300B3BD58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F3E98721D34B1300B3BD58 /* Metra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F3E98921D34B1300B3BD58 /* Metra */ = {
+			isa = PBXGroup;
+			children = (
+				C751B14D21DCA6E700167A68 /* View */,
+				C79C520F21D9F1D5005E48B5 /* Utilities */,
+				C7F3E99C21D34D6400B3BD58 /* Controller */,
+				C7F3E98A21D34B1300B3BD58 /* AppDelegate.swift */,
+				C7F3E98E21D34B1300B3BD58 /* Main.storyboard */,
+				C7F3E99121D34B1400B3BD58 /* Assets.xcassets */,
+				C7F3E99321D34B1400B3BD58 /* LaunchScreen.storyboard */,
+				C7F3E99621D34B1400B3BD58 /* Info.plist */,
+				C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */,
+				C7F3E9A021D3523700B3BD58 /* art.scnassets */,
+			);
+			path = Metra;
+			sourceTree = "<group>";
+		};
+		C7F3E99C21D34D6400B3BD58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7F3E98C21D34B1300B3BD58 /* RestaurantVC.swift */,
+				C778EA0E21D94CA600D5F69C /* LoginVC.swift */,
+				C79C520B21D95E42005E48B5 /* WelcomeVC.swift */,
+				C79C520D21D95E83005E48B5 /* RegisterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAB698F6D8CFCEA5F5F937A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7F3E98621D34B1300B3BD58 /* Metra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F3E99921D34B1400B3BD58 /* Build configuration list for PBXNativeTarget "Metra" */;
+			buildPhases = (
+				C4CAFA18386B8F1A6E40029A /* [CP] Check Pods Manifest.lock */,
+				C7F3E98321D34B1300B3BD58 /* Sources */,
+				C7F3E98421D34B1300B3BD58 /* Frameworks */,
+				C7F3E98521D34B1300B3BD58 /* Resources */,
+				C4760961E6B5065C4F984821 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metra;
+			productName = restaurantArdyia;
+			productReference = C7F3E98721D34B1300B3BD58 /* Metra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F3E97F21D34B1300B3BD58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Metra Company";
+				TargetAttributes = {
+					C7F3E98621D34B1300B3BD58 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = C7F3E98221D34B1300B3BD58 /* Build configuration list for PBXProject "Metra" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7F3E97E21D34B1300B3BD58;
+			productRefGroup = C7F3E98821D34B1300B3BD58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F3E98621D34B1300B3BD58 /* Metra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7F3E98521D34B1300B3BD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F3E99521D34B1400B3BD58 /* LaunchScreen.storyboard in Resources */,
+				C7F3E9A121D3523700B3BD58 /* art.scnassets in Resources */,
+				C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */,
+				C7F3E99221D34B1400B3BD58 /* Assets.xcassets in Resources */,
+				C7F3E99021D34B1300B3BD58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4760961E6B5065C4F984821 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CAFA18386B8F1A6E40029A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-restaurantArdyia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F3E98321D34B1300B3BD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F3E98D21D34B1300B3BD58 /* RestaurantVC.swift in Sources */,
+				C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */,
+				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
+				C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */,
+				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,
+				C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */,
+				C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7F3E98E21D34B1300B3BD58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F3E98F21D34B1300B3BD58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7F3E99321D34B1400B3BD58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F3E99421D34B1400B3BD58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7F3E99721D34B1400B3BD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7F3E99821D34B1400B3BD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7F3E99A21D34B1400B3BD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD4A75E23985DFAF612FBB7 /* Pods-restaurantArdyia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CKRFJCQCT;
+				INFOPLIST_FILE = Metra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ies-constructions.AymanMetra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7F3E99B21D34B1400B3BD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CKRFJCQCT;
+				INFOPLIST_FILE = Metra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ies-constructions.AymanMetra";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F3E98221D34B1300B3BD58 /* Build configuration list for PBXProject "Metra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F3E99721D34B1400B3BD58 /* Debug */,
+				C7F3E99821D34B1400B3BD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F3E99921D34B1400B3BD58 /* Build configuration list for PBXNativeTarget "Metra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F3E99A21D34B1400B3BD58 /* Debug */,
+				C7F3E99B21D34B1400B3BD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F3E97F21D34B1300B3BD58 /* Project object */;
+}
