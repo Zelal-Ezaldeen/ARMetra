@@ -15,7 +15,9 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     @IBOutlet var heightConstarint: NSLayoutConstraint!
     @IBOutlet weak var emaiTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
- 
+    @IBOutlet weak var errorLbl: UILabel!
+    
+    @IBOutlet weak var errorView: ErrorView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     override func viewDidLoad() {
       
@@ -40,6 +42,8 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         Auth.auth().createUser(withEmail: emaiTxt.text!, password: passwordTxt.text!) { (user, error) in
             if error != nil {
                 print(error!)
+                self.errorLbl.text = "\(String(describing: error?.localizedDescription))"
+                self.errorView.isHidden = false
             } else {
                self.spinner.isHidden = true
                 self.spinner.stopAnimating()

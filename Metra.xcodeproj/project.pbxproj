@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */; };
+		C714315221E491BE005F4F1E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714315121E491BE005F4F1E /* ErrorView.swift */; };
+		C748457A21E289B100026049 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457921E289B100026049 /* DataService.swift */; };
+		C748457C21E344C400026049 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457B21E344C400026049 /* AuthVC.swift */; };
+		C748457E21E3463E00026049 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457D21E3463E00026049 /* AuthService.swift */; };
 		C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751B14E21DCA70800167A68 /* RoundedButton.swift */; };
 		C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778EA0E21D94CA600D5F69C /* LoginVC.swift */; };
 		C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */; };
@@ -26,6 +30,10 @@
 		1DD4A75E23985DFAF612FBB7 /* Pods-restaurantArdyia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.debug.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.debug.xcconfig"; sourceTree = "<group>"; };
 		214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurantArdyia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.release.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.release.xcconfig"; sourceTree = "<group>"; };
+		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C748457921E289B100026049 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C748457B21E344C400026049 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		C748457D21E3463E00026049 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C751B14E21DCA70800167A68 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C778EA0E21D94CA600D5F69C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -63,10 +71,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C748457821E2899D00026049 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C748457921E289B100026049 /* DataService.swift */,
+				C748457D21E3463E00026049 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C751B14D21DCA6E700167A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C751B14E21DCA70800167A68 /* RoundedButton.swift */,
+				C714315121E491BE005F4F1E /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +118,7 @@
 		C7F3E98921D34B1300B3BD58 /* Metra */ = {
 			isa = PBXGroup;
 			children = (
+				C748457821E2899D00026049 /* Services */,
 				C751B14D21DCA6E700167A68 /* View */,
 				C79C520F21D9F1D5005E48B5 /* Utilities */,
 				C7F3E99C21D34D6400B3BD58 /* Controller */,
@@ -121,6 +140,7 @@
 				C778EA0E21D94CA600D5F69C /* LoginVC.swift */,
 				C79C520B21D95E42005E48B5 /* WelcomeVC.swift */,
 				C79C520D21D95E83005E48B5 /* RegisterVC.swift */,
+				C748457B21E344C400026049 /* AuthVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,13 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C748457C21E344C400026049 /* AuthVC.swift in Sources */,
 				C7F3E98D21D34B1300B3BD58 /* RestaurantVC.swift in Sources */,
 				C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */,
 				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
+				C748457A21E289B100026049 /* DataService.swift in Sources */,
 				C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */,
 				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,
+				C748457E21E3463E00026049 /* AuthService.swift in Sources */,
 				C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */,
 				C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */,
+				C714315221E491BE005F4F1E /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

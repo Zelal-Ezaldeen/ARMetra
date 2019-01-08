@@ -17,7 +17,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTxt: UITextField!
   
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var viewError: UIView!
     
+    @IBOutlet weak var errorLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTxt.delegate = self
@@ -40,7 +42,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         Auth.auth().signIn(withEmail: emailTxt.text!, password: passwordTxt.text!) { (user, error) in
             
             if error != nil {
-                print(error!)
+                //print(error!)
+                self.errorLbl.text = "\(String(describing: error?.localizedDescription))"
+                self.viewError.isHidden = false
+                
                
             } else {
                 self.spinner.isHidden = true
