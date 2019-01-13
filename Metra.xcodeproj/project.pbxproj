@@ -15,6 +15,8 @@
 		C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751B14E21DCA70800167A68 /* RoundedButton.swift */; };
 		C75F628421EB56B200835FA8 /* BeginMoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628321EB56B200835FA8 /* BeginMoveVC.swift */; };
 		C75F628621EB583800835FA8 /* MoveLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628521EB583800835FA8 /* MoveLogVC.swift */; };
+		C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628721EBC1A200835FA8 /* LocationVC.swift */; };
+		C75F628A21EBC52000835FA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75F628921EBC52000835FA8 /* MapKit.framework */; };
 		C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778EA0E21D94CA600D5F69C /* LoginVC.swift */; };
 		C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */; };
 		C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520B21D95E42005E48B5 /* WelcomeVC.swift */; };
@@ -41,6 +43,8 @@
 		C751B14E21DCA70800167A68 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C75F628321EB56B200835FA8 /* BeginMoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginMoveVC.swift; sourceTree = "<group>"; };
 		C75F628521EB583800835FA8 /* MoveLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveLogVC.swift; sourceTree = "<group>"; };
+		C75F628721EBC1A200835FA8 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		C75F628921EBC52000835FA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C778EA0E21D94CA600D5F69C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79C520B21D95E42005E48B5 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */,
+				C75F628A21EBC52000835FA8 /* MapKit.framework in Frameworks */,
 				C79D214821E72DA7008DBD88 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +165,7 @@
 				C748457B21E344C400026049 /* AuthVC.swift */,
 				C75F628321EB56B200835FA8 /* BeginMoveVC.swift */,
 				C75F628521EB583800835FA8 /* MoveLogVC.swift */,
+				C75F628721EBC1A200835FA8 /* LocationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 		FAB698F6D8CFCEA5F5F937A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C75F628921EBC52000835FA8 /* MapKit.framework */,
 				C79D214721E72DA7008DBD88 /* StoreKit.framework */,
 				214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */,
 			);
@@ -209,6 +216,9 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 							com.apple.Push = {
@@ -320,6 +330,7 @@
 				C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */,
 				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
 				C748457A21E289B100026049 /* DataService.swift in Sources */,
+				C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */,
 				C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */,
 				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,
 				C748457E21E3463E00026049 /* AuthService.swift in Sources */,
