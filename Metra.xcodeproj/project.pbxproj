@@ -18,6 +18,7 @@
 		C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520B21D95E42005E48B5 /* WelcomeVC.swift */; };
 		C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520D21D95E83005E48B5 /* RegisterVC.swift */; };
 		C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C521021D9F1E5005E48B5 /* Constants.swift */; };
+		C79D214821E72DA7008DBD88 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79D214721E72DA7008DBD88 /* StoreKit.framework */; };
 		C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3E98A21D34B1300B3BD58 /* AppDelegate.swift */; };
 		C7F3E98D21D34B1300B3BD58 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3E98C21D34B1300B3BD58 /* RestaurantVC.swift */; };
 		C7F3E99021D34B1300B3BD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E98E21D34B1300B3BD58 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restaurantArdyia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.release.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.release.xcconfig"; sourceTree = "<group>"; };
 		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C714315321E4A547005F4F1E /* Metra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metra.entitlements; sourceTree = "<group>"; };
 		C748457921E289B100026049 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C748457B21E344C400026049 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		C748457D21E3463E00026049 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		C79C520B21D95E42005E48B5 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		C79C520D21D95E83005E48B5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C79C521021D9F1E5005E48B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C79D214721E72DA7008DBD88 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C7F3E98721D34B1300B3BD58 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F3E98A21D34B1300B3BD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F3E98C21D34B1300B3BD58 /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */,
+				C79D214821E72DA7008DBD88 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,7 @@
 		C7F3E98921D34B1300B3BD58 /* Metra */ = {
 			isa = PBXGroup;
 			children = (
+				C714315321E4A547005F4F1E /* Metra.entitlements */,
 				C748457821E2899D00026049 /* Services */,
 				C751B14D21DCA6E700167A68 /* View */,
 				C79C520F21D9F1D5005E48B5 /* Utilities */,
@@ -148,6 +153,7 @@
 		FAB698F6D8CFCEA5F5F937A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C79D214721E72DA7008DBD88 /* StoreKit.framework */,
 				214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */,
 			);
 			name = Frameworks;
@@ -187,6 +193,14 @@
 				TargetAttributes = {
 					C7F3E98621D34B1300B3BD58 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -442,6 +456,7 @@
 			baseConfigurationReference = 1DD4A75E23985DFAF612FBB7 /* Pods-restaurantArdyia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Metra/Metra.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CKRFJCQCT;
 				INFOPLIST_FILE = Metra/Info.plist;
@@ -461,6 +476,7 @@
 			baseConfigurationReference = C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Metra/Metra.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CKRFJCQCT;
 				INFOPLIST_FILE = Metra/Info.plist;
