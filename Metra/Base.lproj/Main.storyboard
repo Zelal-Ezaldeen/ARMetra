@@ -481,21 +481,67 @@
             </objects>
             <point key="canvasLocation" x="-471" y="-599"/>
         </scene>
-        <!--Item 1-->
+        <!--Begin MoveVC-->
         <scene sceneID="2a0-V4-u3X">
             <objects>
-                <viewController id="7RB-e1-8Mv" sceneMemberID="viewController">
+                <viewController id="7RB-e1-8Mv" customClass="BeginMoveVC" customModule="Metra" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXZ-ps-DLd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-fq-ez0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWk-GW-gAN">
+                                <rect key="frame" x="0.0" y="102" width="414" height="500"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مترا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Jno-Ee-fXn">
+                                <rect key="frame" x="186.66666666666666" y="52" width="41" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ابدأ  بالتحرك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yVl-x4-ule">
+                                <rect key="frame" x="155.33333333333334" y="773" width="103.33333333333334" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmp-4S-gW6">
+                                <rect key="frame" x="171.66666666666666" y="690" width="71" height="71"/>
+                                <state key="normal" image="startRunningButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-bQ-bas">
+                                <rect key="frame" x="350" y="507" width="58" height="58"/>
+                                <state key="normal" image="centerNavButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nWk-GW-gAN" firstAttribute="leading" secondItem="bHY-tH-1mq" secondAttribute="leading" id="Abz-Eo-Zdr"/>
+                            <constraint firstItem="bHY-tH-1mq" firstAttribute="trailing" secondItem="nWk-GW-gAN" secondAttribute="trailing" id="CTa-a1-zNg"/>
+                            <constraint firstItem="yVl-x4-ule" firstAttribute="top" secondItem="Mmp-4S-gW6" secondAttribute="bottom" constant="12" id="I6b-Jt-Q9r"/>
+                            <constraint firstItem="bHY-tH-1mq" firstAttribute="trailing" secondItem="9eq-bQ-bas" secondAttribute="trailing" constant="6" id="IlH-o8-TY8"/>
+                            <constraint firstItem="nTG-fq-ez0" firstAttribute="top" secondItem="nXZ-ps-DLd" secondAttribute="top" id="K0S-ye-yGr"/>
+                            <constraint firstItem="Mmp-4S-gW6" firstAttribute="centerX" secondItem="nXZ-ps-DLd" secondAttribute="centerX" id="OjV-Xv-WeJ"/>
+                            <constraint firstItem="Mmp-4S-gW6" firstAttribute="top" secondItem="nWk-GW-gAN" secondAttribute="bottom" constant="88" id="TTJ-AK-8ZE"/>
+                            <constraint firstItem="Jno-Ee-fXn" firstAttribute="centerX" secondItem="nXZ-ps-DLd" secondAttribute="centerX" id="TYu-fC-awu"/>
+                            <constraint firstItem="nTG-fq-ez0" firstAttribute="leading" secondItem="bHY-tH-1mq" secondAttribute="leading" id="UKt-yv-gj1"/>
+                            <constraint firstItem="nTG-fq-ez0" firstAttribute="trailing" secondItem="bHY-tH-1mq" secondAttribute="trailing" id="Y1K-pJ-VE9"/>
+                            <constraint firstItem="yVl-x4-ule" firstAttribute="centerX" secondItem="nXZ-ps-DLd" secondAttribute="centerX" id="cb3-oG-Hyt"/>
+                            <constraint firstItem="nWk-GW-gAN" firstAttribute="top" secondItem="Jno-Ee-fXn" secondAttribute="bottom" constant="20" id="e3I-gj-Uck"/>
+                            <constraint firstItem="Jno-Ee-fXn" firstAttribute="top" secondItem="bHY-tH-1mq" secondAttribute="top" constant="8" id="f1j-c2-vwg"/>
+                            <constraint firstAttribute="bottom" secondItem="nTG-fq-ez0" secondAttribute="bottom" id="ibX-2i-dJu"/>
+                            <constraint firstItem="9eq-bQ-bas" firstAttribute="top" secondItem="nTG-fq-ez0" secondAttribute="bottom" constant="-389" id="sVb-mO-Nd5"/>
+                            <constraint firstItem="yVl-x4-ule" firstAttribute="bottom" secondItem="bHY-tH-1mq" secondAttribute="bottom" constant="-16" id="y9n-wF-mvr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bHY-tH-1mq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="IOp-ij-G6O"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabbar-runIconGray" id="IOp-ij-G6O"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcw-oZ-VE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="-1302"/>
+            <point key="canvasLocation" x="-471.01449275362324" y="-1302.4553571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9zs-Oe-pdo">
@@ -598,14 +644,18 @@
     </scenes>
     <resources>
         <image name="AuthBG" width="375" height="284"/>
+        <image name="BG" width="375" height="667"/>
         <image name="BackgroundLogin" width="2000" height="1334"/>
         <image name="Close" width="28" height="28"/>
         <image name="Email" width="25" height="16"/>
         <image name="Logo" width="515" height="377"/>
         <image name="Play" width="306" height="306"/>
         <image name="Reset" width="102" height="102"/>
+        <image name="centerNavButton" width="58" height="58"/>
         <image name="loginBG" width="414" height="736"/>
         <image name="registerBG" width="1242" height="2208"/>
+        <image name="startRunningButton" width="71" height="71"/>
+        <image name="tabbar-runIconGray" width="27" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ut4-Zt-Mi1"/>
