@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import MapKit
 
 class CurrentMoveVC: LocationVC {
     
     //Outlets
     @IBOutlet weak var swipBGImgView: UIImageView!
     @IBOutlet weak var sliderImgView: UIImageView!
+    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var paceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: NSLayoutConstraint!
+    
+    //Variables
+    var startLocation: CLLocation!
+    var lastLocation: CLLocation!
+    var runDistance = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,9 +35,26 @@ class CurrentMoveVC: LocationVC {
      
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
+        manager?.distanceFilter = 10
+        startRun()
+    }
+    
+    func startRun() {
+        manager?.startUpdatingLocation()
+    }
+    
+    func endRun() {
+        manager?.stopUpdatingLocation()
+    }
+    
+    
+    @IBAction func pauseBtnPressed(_ sender: Any) {
+    }
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
         let minAdjust: CGFloat = 80
-        let maxAdjust: CGFloat = 128
+        let maxAdjust: CGFloat = 130
         if let sliderView = sender.view {
             if sender.state == UIGestureRecognizer.State.began || sender.state == UIGestureRecognizer.State.changed {
                let translation =  sender.translation(in: self.view)
@@ -47,8 +75,22 @@ class CurrentMoveVC: LocationVC {
             }
         }
     }
+}
+
+extension CurrentMoveVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            checkLocationAuthStatus()
+        }
+    }
     
-
-   
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if startLocation == nil {
+            startLocation = locations.first
+        } else if let location = locations.last {
+            runDistance += lastLocation.distance(from: location)
+            distanceLbl.text = "\(runDistance)"
+        }
+        lastLocation = locations.last
+    }
 }

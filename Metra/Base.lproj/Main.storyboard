@@ -735,6 +735,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-Wb-IQq">
                                 <rect key="frame" x="272" y="747" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnPressed:" destination="5aK-TM-NeS" eventType="touchUpInside" id="6XD-TZ-5a5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="انتهاء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uei-ez-aRk">
                                 <rect key="frame" x="179.66666666666666" y="775.33333333333337" width="30.666666666666657" height="18.666666666666629"/>
@@ -776,6 +779,10 @@
                         <viewLayoutGuide key="safeArea" id="EvL-N4-pWu"/>
                     </view>
                     <connections>
+                        <outlet property="distanceLbl" destination="KCz-Jg-86S" id="28h-BB-OcF"/>
+                        <outlet property="durationLbl" destination="Ia1-4i-NLQ" id="GrB-GC-2X4"/>
+                        <outlet property="paceLbl" destination="KLh-Cz-h4h" id="b33-lD-7qE"/>
+                        <outlet property="pauseBtn" destination="88B-ba-HkS" id="TqB-fN-wYh"/>
                         <outlet property="sliderImgView" destination="Exa-Vh-TCA" id="WRa-it-gsQ"/>
                         <outlet property="swipBGImgView" destination="KJM-tg-kPO" id="KnN-uS-WRb"/>
                     </connections>
