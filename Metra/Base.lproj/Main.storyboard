@@ -734,6 +734,11 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-Wb-IQq">
                                 <rect key="frame" x="272" y="747" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="0fd-pH-ZHo"/>
+                                    <constraint firstAttribute="width" secondItem="vSs-Wb-IQq" secondAttribute="height" multiplier="1:1" id="3fD-x5-JUZ"/>
+                                    <constraint firstAttribute="width" constant="75" id="T8H-BZ-xAa"/>
+                                </constraints>
                                 <state key="normal" image="pauseButton"/>
                                 <connections>
                                     <action selector="pauseBtnPressed:" destination="5aK-TM-NeS" eventType="touchUpInside" id="6XD-TZ-5a5"/>
@@ -782,7 +787,7 @@
                         <outlet property="distanceLbl" destination="KCz-Jg-86S" id="28h-BB-OcF"/>
                         <outlet property="durationLbl" destination="Ia1-4i-NLQ" id="GrB-GC-2X4"/>
                         <outlet property="paceLbl" destination="KLh-Cz-h4h" id="b33-lD-7qE"/>
-                        <outlet property="pauseBtn" destination="88B-ba-HkS" id="TqB-fN-wYh"/>
+                        <outlet property="pauseBtn" destination="vSs-Wb-IQq" id="il5-Mq-IDR"/>
                         <outlet property="sliderImgView" destination="Exa-Vh-TCA" id="WRa-it-gsQ"/>
                         <outlet property="swipBGImgView" destination="KJM-tg-kPO" id="KnN-uS-WRb"/>
                     </connections>

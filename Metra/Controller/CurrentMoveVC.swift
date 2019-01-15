@@ -17,7 +17,8 @@ class CurrentMoveVC: LocationVC {
     @IBOutlet weak var durationLbl: UILabel!
     @IBOutlet weak var distanceLbl: UILabel!
     @IBOutlet weak var paceLbl: UILabel!
-    @IBOutlet weak var pauseBtn: NSLayoutConstraint!
+    
+    @IBOutlet weak var pauseBtn: UIButton!
     
     //Variables
     var startLocation: CLLocation!
@@ -48,12 +49,24 @@ class CurrentMoveVC: LocationVC {
     func startRun() {
         manager?.startUpdatingLocation()
         startTimer()
+        pauseBtn.setImage(#imageLiteral(resourceName: "pauseButton"), for: .normal) //pauseButton
+        
+        
     }
     
     func endRun() {
         manager?.stopUpdatingLocation()
+        //Add our object to Realm
+        Run.addRunToRealm(pace: pace, distance: runDistance, duration: counter)
     }
     
+    func pauseRun() {
+        startLocation = nil
+        lastLocation = nil
+        timer.invalidate()
+        manager?.stopUpdatingLocation()
+         pauseBtn.setImage(#imageLiteral(resourceName: "resumeButton"), for: .normal)//setImage(resumeButton, for: .normal)
+    }
     func startTimer() {
         durationLbl.text = counter.formatTimeDurationToString()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
@@ -70,6 +83,11 @@ class CurrentMoveVC: LocationVC {
         return pace.formatTimeDurationToString()
     }
     @IBAction func pauseBtnPressed(_ sender: Any) {
+        if timer.isValid {
+             pauseRun()
+        } else {
+            startRun()
+        }
     }
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
         let minAdjust: CGFloat = 80
@@ -81,7 +99,7 @@ class CurrentMoveVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 } else if sliderView.center.x >= (swipBGImgView.center.x + maxAdjust) {
                     sliderView.center.x = swipBGImgView.center.x + maxAdjust
-                    //End Move here
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 } else {
                     sliderView.center.x = swipBGImgView.center.x - minAdjust

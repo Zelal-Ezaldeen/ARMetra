@@ -11,3 +11,6 @@ import Foundation
 // Segues
 let GO_TO_ARKIT = "goToARKit"
 let TO_WELCOMEVC = "toWelcomeVC"
+
+//Ralm
+let REALM_QUEUE = DispatchQueue(label: "realmQueue")

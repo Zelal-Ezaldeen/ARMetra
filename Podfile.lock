@@ -71,6 +71,11 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -78,6 +83,7 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
+  - RealmSwift
   - SVProgressHUD
 
 SPEC REPOS:
@@ -95,6 +101,8 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Realm
+    - RealmSwift
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -111,8 +119,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 87f38eff61a8a4e310975a50265b8843a2fef198
+PODFILE CHECKSUM: 9b9e0c298baa1cec9c8f1fa563704c4c193f0c6b
 
 COCOAPODS: 1.6.0.beta.2
