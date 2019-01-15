@@ -12,5 +12,7 @@ import Foundation
 let GO_TO_ARKIT = "goToARKit"
 let TO_WELCOMEVC = "toWelcomeVC"
 
+//Cell
+let RUN_LOG_CELL = "RunLogCell"
 //Ralm
 let REALM_QUEUE = DispatchQueue(label: "realmQueue")

@@ -10,21 +10,31 @@ import UIKit
 
 class MoveLogVC: UIViewController {
 
+    //Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
+     
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension MoveLogVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Run.getAllRuns()?.count ?? 0
     }
-    */
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: RUN_LOG_CELL) as? RunLogCell {
+            guard let run = Run.getAllRuns()?[indexPath.row] else {
+                return RunLogCell()
+            }
+            cell.configure(run: run)
+            return cell
+        } else {
+            return RunLogCell()
+        }
+    }
 }
