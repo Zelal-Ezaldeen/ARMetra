@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */; };
 		C714315221E491BE005F4F1E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714315121E491BE005F4F1E /* ErrorView.swift */; };
+		C737642021EDCD1700E77322 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737641F21EDCD1700E77322 /* Extensions.swift */; };
 		C748457A21E289B100026049 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457921E289B100026049 /* DataService.swift */; };
 		C748457C21E344C400026049 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457B21E344C400026049 /* AuthVC.swift */; };
 		C748457E21E3463E00026049 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457D21E3463E00026049 /* AuthService.swift */; };
@@ -38,6 +39,7 @@
 		C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.release.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.release.xcconfig"; sourceTree = "<group>"; };
 		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C714315321E4A547005F4F1E /* Metra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metra.entitlements; sourceTree = "<group>"; };
+		C737641F21EDCD1700E77322 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C748457921E289B100026049 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C748457B21E344C400026049 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		C748457D21E3463E00026049 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 				C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C737641E21EDCD0000E77322 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C737641F21EDCD1700E77322 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C748457821E2899D00026049 /* Services */ = {
@@ -140,6 +150,7 @@
 		C7F3E98921D34B1300B3BD58 /* Metra */ = {
 			isa = PBXGroup;
 			children = (
+				C737641E21EDCD0000E77322 /* Extensions */,
 				C75F628221EB4E3200835FA8 /* Resources */,
 				C714315321E4A547005F4F1E /* Metra.entitlements */,
 				C748457821E2899D00026049 /* Services */,
@@ -337,6 +348,7 @@
 				C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */,
 				C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */,
 				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,
+				C737642021EDCD1700E77322 /* Extensions.swift in Sources */,
 				C748457E21E3463E00026049 /* AuthService.swift in Sources */,
 				C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */,
 				C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */,
