@@ -11,6 +11,8 @@
 		AD2F248EB1A0C6AC82C22A26 /* Pods_restaurantArdyia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FA9B133814A23934909F8 /* Pods_restaurantArdyia.framework */; };
 		C70E86AB21EDDF0700729707 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86AA21EDDF0700729707 /* Run.swift */; };
 		C70E86AD21EDF01600729707 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86AC21EDF01600729707 /* RunLogCell.swift */; };
+		C70E86AF21EE60C400729707 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86AE21EE60C400729707 /* Location.swift */; };
+		C70E86B121EE647900729707 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86B021EE647900729707 /* RealmConfig.swift */; };
 		C714315221E491BE005F4F1E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714315121E491BE005F4F1E /* ErrorView.swift */; };
 		C737642021EDCD1700E77322 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737641F21EDCD1700E77322 /* Extensions.swift */; };
 		C748457A21E289B100026049 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457921E289B100026049 /* DataService.swift */; };
@@ -43,6 +45,8 @@
 		C2C30EC4EB68B70379A53864 /* Pods-restaurantArdyia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restaurantArdyia.release.xcconfig"; path = "Target Support Files/Pods-restaurantArdyia/Pods-restaurantArdyia.release.xcconfig"; sourceTree = "<group>"; };
 		C70E86AA21EDDF0700729707 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		C70E86AC21EDF01600729707 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
+		C70E86AE21EE60C400729707 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C70E86B021EE647900729707 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C714315321E4A547005F4F1E /* Metra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metra.entitlements; sourceTree = "<group>"; };
 		C737641F21EDCD1700E77322 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C70E86AA21EDDF0700729707 /* Run.swift */,
+				C70E86AE21EE60C400729707 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C79C521021D9F1E5005E48B5 /* Constants.swift */,
+				C70E86B021EE647900729707 /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */,
 				C75F628C21EBC64500835FA8 /* CurrentMoveVC.swift in Sources */,
 				C70E86AD21EDF01600729707 /* RunLogCell.swift in Sources */,
+				C70E86B121EE647900729707 /* RealmConfig.swift in Sources */,
 				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
 				C748457A21E289B100026049 /* DataService.swift in Sources */,
 				C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */,
@@ -377,6 +384,7 @@
 				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,
 				C737642021EDCD1700E77322 /* Extensions.swift in Sources */,
 				C748457E21E3463E00026049 /* AuthService.swift in Sources */,
+				C70E86AF21EE60C400729707 /* Location.swift in Sources */,
 				C79C520C21D95E42005E48B5 /* WelcomeVC.swift in Sources */,
 				C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */,
 				C70E86AB21EDDF0700729707 /* Run.swift in Sources */,
