@@ -36,6 +36,7 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate {
         self.playBtn.isEnabled = false
     }
     
+       
     @IBAction func resetBtnPressed(_ sender: Any) {
         self.playBtn.isEnabled = true
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
@@ -56,6 +57,7 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate {
         }
         
     }
+    
     
     func addNode() {
        let restaurantArdiyaScene = SCNScene(named: "art.scnassets/ardiya.scn")
