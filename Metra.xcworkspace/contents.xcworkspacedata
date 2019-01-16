@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/zelal-ezaldeen/Documents/Zelal/Metra App/restaurantArdiya/Metra.xcodeproj">
+      location = "group:Metra.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Metra.xcodeproj">
    </FileRef>
 </Workspace>

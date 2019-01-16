@@ -611,7 +611,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWk-GW-gAN">
-                                <rect key="frame" x="0.0" y="101.33333333333334" width="414" height="500.66666666666663"/>
+                                <rect key="frame" x="0.0" y="101.33333333333331" width="414" height="549.66666666666674"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مترا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Jno-Ee-fXn">
                                 <rect key="frame" x="186.66666666666666" y="52.000000000000007" width="40.666666666666657" height="29.333333333333336"/>
@@ -620,13 +620,13 @@
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ابدأ  بالتحرك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yVl-x4-ule">
-                                <rect key="frame" x="155.33333333333334" y="773" width="103.33333333333334" height="24"/>
+                                <rect key="frame" x="155.33333333333334" y="822" width="103.33333333333334" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmp-4S-gW6">
-                                <rect key="frame" x="171.66666666666666" y="690" width="71" height="71"/>
+                                <rect key="frame" x="171.66666666666666" y="739" width="71" height="71"/>
                                 <state key="normal" image="startRunningButton"/>
                                 <connections>
                                     <segue destination="5aK-TM-NeS" kind="show" id="TLf-Kq-2hq"/>
@@ -816,8 +816,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مترا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-jN-bHU">
-                                <rect key="frame" x="186.66666666666666" y="52.000000000000007" width="40.666666666666657" height="29.333333333333336"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الوقت " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-jN-bHU">
+                                <rect key="frame" x="180.33333333333334" y="52.000000000000007" width="53.333333333333343" height="29.333333333333336"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -854,6 +854,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="KJM-tg-kPO">
                                 <rect key="frame" x="66" y="747" width="232" height="75"/>
                             </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5to-7p-ydR">
+                                <rect key="frame" x="0.0" y="207" width="414" height="296"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يجب عليك التحرك لحساب مسافتك" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgo-W4-INz">
+                                        <rect key="frame" x="83.666666666666671" y="107" width="246.66666666666663" height="21.666666666666657"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="Kgo-W4-INz" firstAttribute="centerX" secondItem="5to-7p-ydR" secondAttribute="centerX" id="Es7-lc-m28"/>
+                                    <constraint firstItem="Kgo-W4-INz" firstAttribute="centerY" secondItem="5to-7p-ydR" secondAttribute="centerY" constant="-30" id="GYW-bP-sM3"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-Wb-IQq">
                                 <rect key="frame" x="272" y="747" width="75" height="75"/>
                                 <constraints>
@@ -875,6 +892,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="Exa-Vh-TCA">
                                 <rect key="frame" x="75" y="756" width="57" height="57"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-lX-KNc">
+                                <rect key="frame" x="20" y="52" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <segue destination="7RB-e1-8Mv" kind="show" id="3ok-dV-kll"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -883,12 +909,14 @@
                             <constraint firstItem="Y9r-yf-DBy" firstAttribute="leading" secondItem="EvL-N4-pWu" secondAttribute="leading" id="5hP-oz-Jnk"/>
                             <constraint firstItem="vSs-Wb-IQq" firstAttribute="centerY" secondItem="KJM-tg-kPO" secondAttribute="centerY" id="88B-ba-HkS"/>
                             <constraint firstAttribute="bottom" secondItem="TZb-S2-YCW" secondAttribute="bottom" id="8qU-dK-dnh"/>
+                            <constraint firstItem="5to-7p-ydR" firstAttribute="leading" secondItem="EvL-N4-pWu" secondAttribute="leading" id="BYv-y4-z0d"/>
                             <constraint firstItem="KJM-tg-kPO" firstAttribute="leading" secondItem="Exa-Vh-TCA" secondAttribute="trailing" constant="-66" id="Ilw-Uw-8nB"/>
                             <constraint firstItem="vSs-Wb-IQq" firstAttribute="leading" secondItem="KJM-tg-kPO" secondAttribute="trailing" constant="-26" id="J9i-Vs-BV3"/>
                             <constraint firstItem="Uei-ez-aRk" firstAttribute="centerX" secondItem="KJM-tg-kPO" secondAttribute="centerX" constant="13" id="N8O-yw-c4X"/>
                             <constraint firstItem="TbZ-hD-f8d" firstAttribute="centerX" secondItem="wzE-qQ-gtb" secondAttribute="centerX" id="TjL-vc-9iZ"/>
                             <constraint firstItem="Exa-Vh-TCA" firstAttribute="centerY" secondItem="KJM-tg-kPO" secondAttribute="centerY" id="Z8l-Sm-HYH"/>
                             <constraint firstItem="KJM-tg-kPO" firstAttribute="top" secondItem="TbZ-hD-f8d" secondAttribute="bottom" constant="175.66999999999999" id="a51-tL-hL0"/>
+                            <constraint firstItem="TbZ-hD-f8d" firstAttribute="top" secondItem="5to-7p-ydR" secondAttribute="bottom" constant="48.670000000000002" id="b5G-57-JcY"/>
                             <constraint firstItem="XO2-rD-wEl" firstAttribute="centerY" secondItem="Y9r-yf-DBy" secondAttribute="centerY" id="bB2-fh-Uq2"/>
                             <constraint firstItem="UAX-jN-bHU" firstAttribute="top" secondItem="EvL-N4-pWu" secondAttribute="top" constant="8" id="blO-2f-oee"/>
                             <constraint firstItem="Uei-ez-aRk" firstAttribute="centerY" secondItem="KJM-tg-kPO" secondAttribute="centerY" id="dEf-k6-wbh"/>
@@ -897,6 +925,8 @@
                             <constraint firstItem="TZb-S2-YCW" firstAttribute="top" secondItem="wzE-qQ-gtb" secondAttribute="top" id="f6B-Hi-1SD"/>
                             <constraint firstItem="Y9r-yf-DBy" firstAttribute="trailing" secondItem="EvL-N4-pWu" secondAttribute="trailing" id="hxT-87-zAN"/>
                             <constraint firstItem="TbZ-hD-f8d" firstAttribute="top" secondItem="XO2-rD-wEl" secondAttribute="bottom" constant="120.67" id="mUm-ED-5M6"/>
+                            <constraint firstItem="5to-7p-ydR" firstAttribute="top" secondItem="Ia1-4i-NLQ" secondAttribute="bottom" constant="95.329999999999998" id="mlL-2Z-mbc"/>
+                            <constraint firstItem="5to-7p-ydR" firstAttribute="trailing" secondItem="EvL-N4-pWu" secondAttribute="trailing" id="pBF-97-p5s"/>
                             <constraint firstItem="TZb-S2-YCW" firstAttribute="trailing" secondItem="EvL-N4-pWu" secondAttribute="trailing" id="pVy-bp-z8D"/>
                             <constraint firstItem="XO2-rD-wEl" firstAttribute="centerX" secondItem="Y9r-yf-DBy" secondAttribute="centerX" id="ubg-uy-C7f"/>
                             <constraint firstItem="UAX-jN-bHU" firstAttribute="centerX" secondItem="wzE-qQ-gtb" secondAttribute="centerX" id="ux9-GQ-umb"/>
@@ -912,11 +942,12 @@
                         <outlet property="pauseBtn" destination="vSs-Wb-IQq" id="il5-Mq-IDR"/>
                         <outlet property="sliderImgView" destination="Exa-Vh-TCA" id="WRa-it-gsQ"/>
                         <outlet property="swipBGImgView" destination="KJM-tg-kPO" id="KnN-uS-WRb"/>
+                        <outlet property="viewError" destination="5to-7p-ydR" id="4pt-2S-uR5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0D-of-M4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="-1331"/>
+            <point key="canvasLocation" x="3002.898550724638" y="-1331.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9zs-Oe-pdo">
@@ -1053,7 +1084,7 @@
         <image name="tabbar-runIconGray" width="27" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hIO-qY-5YB"/>
         <segue reference="lAf-sH-Qfg"/>
+        <segue reference="3ok-dV-kll"/>
     </inferredMetricsTieBreakers>
 </document>

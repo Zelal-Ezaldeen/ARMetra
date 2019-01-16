@@ -19,6 +19,7 @@ class CurrentMoveVC: LocationVC {
     @IBOutlet weak var distanceLbl: UILabel!
     @IBOutlet weak var paceLbl: UILabel!
     
+    @IBOutlet weak var viewError: UIView!
     @IBOutlet weak var pauseBtn: UIButton!
     
     //Variables
@@ -80,8 +81,13 @@ class CurrentMoveVC: LocationVC {
     }
     
     func calculatePace(time seconds: Int, miles: Double) -> String {
-        pace = Int(Double(seconds) / miles)
-        return pace.formatTimeDurationToString()
+        if miles == 0 {
+            viewError.isHidden = false
+        } else {
+            pace = Int(Double(seconds) / miles)
+            
+        }
+       return pace.formatTimeDurationToString()
     }
     @IBAction func pauseBtnPressed(_ sender: Any) {
         if timer.isValid {

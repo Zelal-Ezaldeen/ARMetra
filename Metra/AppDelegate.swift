@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Initialise and Configure Firebase
         FirebaseApp.configure()
         
+//        if Auth.auth().currentUser == nil {
+//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            let authVC = storyboard.instantiateInitialViewController()
+//        }
         let myDatabase = Database.database().reference()
         myDatabase.setValue("We git data")
         return true

@@ -20,6 +20,7 @@ class MoveLogVC: UIViewController {
 
      
     }
+
 }
 
 extension MoveLogVC: UITableViewDelegate, UITableViewDataSource {
