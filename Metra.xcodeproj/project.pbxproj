@@ -14,6 +14,7 @@
 		C70E86AF21EE60C400729707 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86AE21EE60C400729707 /* Location.swift */; };
 		C70E86B121EE647900729707 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86B021EE647900729707 /* RealmConfig.swift */; };
 		C714315221E491BE005F4F1E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714315121E491BE005F4F1E /* ErrorView.swift */; };
+		C72AE2F921F1C64500056E4A /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AE2F821F1C64500056E4A /* MeVC.swift */; };
 		C737642021EDCD1700E77322 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737641F21EDCD1700E77322 /* Extensions.swift */; };
 		C748457A21E289B100026049 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457921E289B100026049 /* DataService.swift */; };
 		C748457C21E344C400026049 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748457B21E344C400026049 /* AuthVC.swift */; };
@@ -49,6 +50,7 @@
 		C70E86B021EE647900729707 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C714315321E4A547005F4F1E /* Metra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metra.entitlements; sourceTree = "<group>"; };
+		C72AE2F821F1C64500056E4A /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		C737641F21EDCD1700E77322 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C748457921E289B100026049 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C748457B21E344C400026049 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				C75F628521EB583800835FA8 /* MoveLogVC.swift */,
 				C75F628721EBC1A200835FA8 /* LocationVC.swift */,
 				C75F628B21EBC64500835FA8 /* CurrentMoveVC.swift */,
+				C72AE2F821F1C64500056E4A /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				C70E86B121EE647900729707 /* RealmConfig.swift in Sources */,
 				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
 				C748457A21E289B100026049 /* DataService.swift in Sources */,
+				C72AE2F921F1C64500056E4A /* MeVC.swift in Sources */,
 				C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */,
 				C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */,
 				C751B14F21DCA70800167A68 /* RoundedButton.swift in Sources */,

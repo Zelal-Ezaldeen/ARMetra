@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "AuthBG.jpg",
+      "filename" : "defaultProfileImage.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "defaultProfileImage@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "defaultProfileImage@3x.png",
       "scale" : "3x"
     }
   ],

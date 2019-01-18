@@ -38,7 +38,6 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         spinner.isHidden = false
         spinner.startAnimating()
         //Set up a new user on our Firebase database
-        
         Auth.auth().createUser(withEmail: emaiTxt.text!, password: passwordTxt.text!) { (user, error) in
             if error != nil {
                 print(error!)
@@ -54,8 +53,8 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_WELCOMEVC, sender: nil)
-       // dismiss(animated: true, completion: nil)
+     //   performSegue(withIdentifier: TO_WELCOMEVC, sender: nil)
+      dismiss(animated: true, completion: nil)
     }
     
 }

@@ -17,3 +17,8 @@ let RUN_LOG_CELL = "RunLogCell"
 //Ralm
 let REALM_QUEUE = DispatchQueue(label: "realmQueue")
 let REALM_RUN_CONFIG = "realmRunConfig"
+
+//Storyboard
+let AUTH_VC = "AuthVC"
+let LOGIN_VC = "LoginVC"
+let REGISTER_BY_EMAIL = "registerByEmail"

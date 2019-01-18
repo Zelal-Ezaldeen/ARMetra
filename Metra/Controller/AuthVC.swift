@@ -13,18 +13,19 @@ class AuthVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
+    }
+    @IBAction func signInWithFacebookBtnPressed(_ sender: Any) {
+    }
+    @IBAction func signInWithGoogleBtnPressed(_ sender: Any) {
+    }
+    @IBAction func signInByEmailBtnPressed(_ sender: Any) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: REGISTER_BY_EMAIL)
+        present(loginVC!, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signInBtnPressed(_ sender: Any) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: LOGIN_VC)
+        present(loginVC!, animated: true, completion: nil)
     }
-    */
-
 }

@@ -128,10 +128,16 @@ extension CurrentMoveVC: CLLocationManagerDelegate {
         }
     }
     
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if startLocation == nil {
             startLocation = locations.first
+            print("First")
+            print(startLocation)
         } else if let location = locations.last {
+            print("DE")
+            print(location)
             runDistance += lastLocation.distance(from: location)
             let newLocation = Location(latitude: Double(lastLocation.coordinate.latitude), longitude: Double(lastLocation.coordinate.longitude))
             coordinateLocations.insert(newLocation, at: 0)

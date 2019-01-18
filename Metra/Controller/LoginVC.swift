@@ -18,8 +18,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var viewError: UIView!
-    
     @IBOutlet weak var errorLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTxt.delegate = self
@@ -27,8 +27,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         spinner.isHidden = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backGroundTapped))
         view.addGestureRecognizer(tapGesture)
-
-        
     }
     
     @objc func backGroundTapped() {
@@ -42,11 +40,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         Auth.auth().signIn(withEmail: emailTxt.text!, password: passwordTxt.text!) { (user, error) in
             
             if error != nil {
-                //print(error!)
                 self.errorLbl.text = "\(String(describing: error?.localizedDescription))"
                 self.viewError.isHidden = false
-                
-               
             } else {
                 self.spinner.isHidden = true
                 self.spinner.stopAnimating()
@@ -55,8 +50,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-
     @IBAction func closeBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_WELCOMEVC, sender: nil)
+        //performSegue(withIdentifier: TO_WELCOMEVC, sender: nil)
+      dismiss(animated: true, completion: nil)
     }
 }

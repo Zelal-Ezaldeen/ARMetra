@@ -47,7 +47,6 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate {
     
     @IBAction func logOutBtnPressed(_ sender: Any) {
         //Log out user and send them back to the WelcomeVC
-        
         do {
             try Auth.auth().signOut()
             self.performSegue(withIdentifier: TO_WELCOMEVC , sender: nil)
