@@ -13,7 +13,6 @@ class AuthVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
       
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +31,10 @@ class AuthVC: UIViewController {
     }
     
     @IBAction func signInBtnPressed(_ sender: Any) {
+        print("SignIn")
         let loginVC = storyboard?.instantiateViewController(withIdentifier: LOGIN_VC)
         present(loginVC!, animated: true, completion: nil)
     }
+    
+   
 }

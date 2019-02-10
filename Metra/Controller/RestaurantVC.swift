@@ -27,11 +27,7 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
         self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
         self.registerGestureRecognizers()
-        
         projectARName.delegate = self
-        playBtn.bindToKeyboard()
-        resetBtn.bindToKeyboard()
-        locationBtn.bindToKeyboard()
         
     }
 
@@ -71,15 +67,48 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
     
     func addNode() {
        let projectName = projectARName.text!
+        //Ardiya Restaurant
        let restaurantArdiyaScene = SCNScene(named: "art.scnassets/ardiya.scn")
        let restaurantArdiyaNode = restaurantArdiyaScene?.rootNode.childNode(withName: "ardiya", recursively: false)
+        //Aljassas Villa
+        let AljassasScene = SCNScene(named: "art.scnassets/Aljassas.scn")
+        let AljassasNode = AljassasScene?.rootNode.childNode(withName: "Aljassas", recursively: false)
+        //Athby Villa
+        let AthbyScene = SCNScene(named: "art.scnassets/Athby.scn")
+        let AthbyNode = AthbyScene?.rootNode.childNode(withName: "Athby", recursively: false)
+        //AthbyGround
+        let AthbyGroundScene = SCNScene(named: "art.scnassets/AthbyGround.scn")
+        let AthbyGroundNode = AthbyGroundScene?.rootNode.childNode(withName: "AthbyGround", recursively: false)
+        //IbrahimSalal Villa
+        let IbrahimSalalScene = SCNScene(named: "art.scnassets/IbrahimSalal.scn")
+        let IbrahimSalalNode = IbrahimSalalScene?.rootNode.childNode(withName: "IbrahimSalal", recursively: false)
         if (projectName == restaurantArdiyaNode?.name){
             projectARName.isHidden = true
             restaurantArdiyaNode?.position = SCNVector3(0,-1,-8)
             self.centerPivot(for: restaurantArdiyaNode!)
             self.sceneView.scene.rootNode.addChildNode(restaurantArdiyaNode!)
+        } else if (projectName == AljassasNode?.name){
+            projectARName.isHidden = true
+            AljassasNode?.position = SCNVector3(0,0.1,-2)
+            self.centerPivot(for: AljassasNode!)
+            self.sceneView.scene.rootNode.addChildNode(AljassasNode!)
+        } else if (projectName == AthbyNode?.name){
+            projectARName.isHidden = true
+            AthbyNode?.position = SCNVector3(0,0.1,-2)
+            self.centerPivot(for: AthbyNode!)
+            self.sceneView.scene.rootNode.addChildNode(AthbyNode!)
+        } else if (projectName == AthbyGroundNode?.name){
+            projectARName.isHidden = true
+            AthbyGroundNode?.position = SCNVector3(0,0.1,-2)
+            self.centerPivot(for: AthbyGroundNode!)
+            self.sceneView.scene.rootNode.addChildNode(AthbyGroundNode!)
+        } else if (projectName == IbrahimSalalNode?.name){
+            projectARName.isHidden = true
+            IbrahimSalalNode?.position = SCNVector3(0,3,-12)
+            self.centerPivot(for: IbrahimSalalNode!)
+            self.sceneView.scene.rootNode.addChildNode(IbrahimSalalNode!)
         } else {
-           projectARName.text = "خطأ في اسم المشروع"
+           projectARName.placeholder = "خطأ في اسم المشروع"
         }
     }
     

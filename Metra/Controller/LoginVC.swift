@@ -53,4 +53,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //performSegue(withIdentifier: TO_WELCOMEVC, sender: nil)
       dismiss(animated: true, completion: nil)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 }
