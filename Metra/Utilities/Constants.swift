@@ -10,7 +10,7 @@ import Foundation
 
 // Segues
 let GO_TO_ARKIT = "goToARKit"
-let TO_WELCOMEVC = "toWelcomeVC"
+let GO_TO_PRODUCT = "ProductsVC"
 
 //Cell
 let RUN_LOG_CELL = "RunLogCell"
@@ -25,3 +25,4 @@ let REGISTER_BY_EMAIL = "registerByEmail"
 
 //Cells
 let CATEGORY_CELL = "CategoryCell"
+let PRODUCT_CELL = "ProductCell"

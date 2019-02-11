@@ -15,7 +15,7 @@ class DataService {
     
     private let categories = [
         Category(title: "ديكورات", imageName: "welcomeBG"),
-        Category(title: "فلل افتراضية", imageName: "VR.jpg"),
+        Category(title: "شاهد فلتك", imageName: "VR.jpg"),
         Category(title: "فلل سكنية", imageName: "villa.jpg"),
         Category(title: "استشارات هندسية", imageName: "plan.jpg")
         
@@ -27,11 +27,76 @@ class DataService {
         return categories
     }
     
+    private let livingRoom = [
+        Product(title: "صالة", imageName: "livingRoom0.jpg"),
+        Product(title: "صالة", imageName: "livingRoom1.jpg"),
+        Product(title: "صالة", imageName: "livingRoom2.jpg"),
+        Product(title: "صالة", imageName: "livingRoom3.jpg"),
+        Product(title: "صالة", imageName: "livingRoom4.jpg"),
+        Product(title: "صالة", imageName: "livingRoom5.jpg")
+       
+     
+    ]
+    
+    private let bedRoom = [
+        Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
+        Product(title: "غرف نوم",imageName: "bedRoom1.jpg"),
+        
+        
+    ]
+    
+    private let foodRoom = [
+        Product(title: "غرف طعام",imageName: "foodRoom0.jpg")
+    
+        ]
+    
+    private let restaurant = [
+        Product(title: "مطاعم",imageName: "restaurant0.jpg"),
+        Product(title: "مطاعم",imageName: "restaurant1.jpg"),
+         Product(title: "مطاعم",imageName: "restaurant2.jpg")
+        
+    ]
+    
+    private let kidRoom = [Product]()  //Empty
     private let scenes = [
         Scene(title: "AljassasVilla", imageName: "Aljassas"),
         Scene(title: "AlArdiyaRestaurant", imageName: "ardiya")
     ]
     
+    func getProducts(forCategoryTitle title: String) -> [Product] {
+        switch title {
+        case "ديكورات":
+           return  getLivingRoom()
+        case "شاهد فلتك":
+          return  getBedRoom()
+        case "فلل سكنية":
+          return getRestaurant()
+        case "استشارات هندسية":
+        return   getFoodRoom()
+//        case "غرف أطفال":
+//         return   getKidRoom()
+        default:
+              return  getLivingRoom()
+        }
+    }
+    
+    func getLivingRoom() -> [Product] {
+        return livingRoom
+    }
+    
+    func getBedRoom() -> [Product] {
+        return bedRoom
+    }
+    
+    func getFoodRoom() -> [Product] {
+        return foodRoom
+    }
+    func getRestaurant() -> [Product] {
+        return restaurant
+    }
+//    func getKidRoom() -> [Product] {
+//        return kidRoom
+//    }
     func getScenes() -> [Scene] {
         
         return scenes
