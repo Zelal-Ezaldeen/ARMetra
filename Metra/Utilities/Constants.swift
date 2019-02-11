@@ -22,3 +22,6 @@ let REALM_RUN_CONFIG = "realmRunConfig"
 let AUTH_VC = "AuthVC"
 let LOGIN_VC = "LoginVC"
 let REGISTER_BY_EMAIL = "registerByEmail"
+
+//Cells
+let CATEGORY_CELL = "CategoryCell"

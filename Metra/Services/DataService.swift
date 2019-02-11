@@ -13,6 +13,29 @@ let DB_BASE = Database.database().reference()
 class DataService {
     static let instance = DataService()
     
+    private let categories = [
+        Category(title: "ديكورات", imageName: "welcomeBG"),
+        Category(title: "فلل افتراضية", imageName: "VR.jpg"),
+        Category(title: "فلل سكنية", imageName: "villa.jpg"),
+        Category(title: "استشارات هندسية", imageName: "plan.jpg")
+        
+    ]
+    
+    func getCategories() -> [Category] {
+        
+        
+        return categories
+    }
+    
+    private let scenes = [
+        Scene(title: "AljassasVilla", imageName: "Aljassas"),
+        Scene(title: "AlArdiyaRestaurant", imageName: "ardiya")
+    ]
+    
+    func getScenes() -> [Scene] {
+        
+        return scenes
+    }
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_GROUPS = DB_BASE.child("groups")

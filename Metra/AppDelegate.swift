@@ -21,15 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       //  print(Realm.Configuration.defaultConfiguration.fileURL)
         //Initialise and Configure Firebase
         FirebaseApp.configure()
-        if Auth.auth().currentUser == nil {
-            //To access the storyboard
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboard.instantiateViewController(withIdentifier: AUTH_VC)
-            window?.makeKeyAndVisible()
-            window?.rootViewController?.present(authVC, animated: true, completion: nil)
-        }
-        let myDatabase = Database.database().reference()
-        myDatabase.setValue("We git data")
+//        if Auth.auth().currentUser == nil {
+//            //To access the storyboard
+//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//            let authVC = storyboard.instantiateViewController(withIdentifier: AUTH_VC)
+//            window?.makeKeyAndVisible()
+//            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+//        }
+//        let myDatabase = Database.database().reference()
+//        myDatabase.setValue("We git data")
         
      
         
