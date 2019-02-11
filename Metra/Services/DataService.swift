@@ -15,8 +15,8 @@ class DataService {
     
     private let categories = [
         Category(title: "ديكورات", imageName: "welcomeBG"),
-        Category(title: "شاهد فلتك", imageName: "VR.jpg"),
-        Category(title: "فلل سكنية", imageName: "villa.jpg"),
+        Category(title: "فلل افتراضية", imageName: "VR.jpg"),
+        Category(title: "واجهات", imageName: "villa.jpg"),
         Category(title: "استشارات هندسية", imageName: "plan.jpg")
         
     ]
@@ -27,30 +27,35 @@ class DataService {
         return categories
     }
     
-    private let livingRoom = [
+    private let decores = [
         Product(title: "صالة", imageName: "livingRoom0.jpg"),
         Product(title: "صالة", imageName: "livingRoom1.jpg"),
         Product(title: "صالة", imageName: "livingRoom2.jpg"),
         Product(title: "صالة", imageName: "livingRoom3.jpg"),
         Product(title: "صالة", imageName: "livingRoom4.jpg"),
-        Product(title: "صالة", imageName: "livingRoom5.jpg")
-       
+        Product(title: "صالة", imageName: "livingRoom5.jpg"),
+        Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
+        Product(title: "غرف نوم",imageName: "bedRoom1.jpg"),
+        Product(title: "غرف طعام",imageName: "foodRoom.jpg"),
+         Product(title: "مطاعم",imageName: "restaurant0.jpg"),
+         Product(title: "مطاعم",imageName: "restaurant1.jpg"),
+         Product(title: "مطاعم",imageName: "restaurant2.jpg")
      
     ]
     
-    private let bedRoom = [
+    private let VRVillas = [
         Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
-        Product(title: "غرف نوم",imageName: "bedRoom1.jpg"),
+        Product(title: "غرف نوم",imageName: "bedRoom1.jpg")
         
         
     ]
     
-    private let foodRoom = [
+    private let designs = [
         Product(title: "غرف طعام",imageName: "foodRoom0.jpg")
     
         ]
     
-    private let restaurant = [
+    private let plans = [
         Product(title: "مطاعم",imageName: "restaurant0.jpg"),
         Product(title: "مطاعم",imageName: "restaurant1.jpg"),
          Product(title: "مطاعم",imageName: "restaurant2.jpg")
@@ -66,33 +71,33 @@ class DataService {
     func getProducts(forCategoryTitle title: String) -> [Product] {
         switch title {
         case "ديكورات":
-           return  getLivingRoom()
-        case "شاهد فلتك":
-          return  getBedRoom()
-        case "فلل سكنية":
-          return getRestaurant()
+           return  getDecores()
+        case "فلل افتراضية":
+          return  getVRVillas()
+        case "واجهات":
+          return getDesigns()
         case "استشارات هندسية":
-        return   getFoodRoom()
+        return   getPlans()
 //        case "غرف أطفال":
 //         return   getKidRoom()
         default:
-              return  getLivingRoom()
+              return  getDecores()
         }
     }
     
-    func getLivingRoom() -> [Product] {
-        return livingRoom
+    func getDecores() -> [Product] {
+        return decores
     }
     
-    func getBedRoom() -> [Product] {
-        return bedRoom
+    func getVRVillas() -> [Product] {
+        return VRVillas
     }
     
-    func getFoodRoom() -> [Product] {
-        return foodRoom
+    func getDesigns() -> [Product] {
+        return designs
     }
-    func getRestaurant() -> [Product] {
-        return restaurant
+    func getPlans() -> [Product] {
+        return plans
     }
 //    func getKidRoom() -> [Product] {
 //        return kidRoom

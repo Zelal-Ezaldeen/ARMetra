@@ -369,6 +369,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="backBtnPressed:" destination="qW5-Uw-g0r" eventType="touchUpInside" id="b4X-De-got"/>
                                     <action selector="closeBtn:" destination="7RB-e1-8Mv" eventType="touchUpInside" id="XSp-qb-65r"/>
                                 </connections>
                             </button>
@@ -389,11 +390,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="292"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livingRoom0" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-Of-PwT">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livingRoom0" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-Of-PwT">
                                                     <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="178" id="4Dj-EW-0HJ"/>
-                                                        <constraint firstAttribute="width" constant="178" id="pzc-6U-5rd"/>
+                                                        <constraint firstAttribute="width" constant="178" id="rvD-7R-cJM"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صالة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqP-D3-wiG">
@@ -428,7 +429,7 @@
                                 <rect key="frame" x="186" y="44" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="T7A-Yf-I7g"/>
-                                    <constraint firstAttribute="width" constant="42" id="lUM-FN-QhS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="lUM-FN-QhS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

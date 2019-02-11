@@ -39,4 +39,7 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         return ProductCell()
     }
 
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
