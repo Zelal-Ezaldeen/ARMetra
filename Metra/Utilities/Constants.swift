@@ -11,6 +11,7 @@ import Foundation
 // Segues
 let GO_TO_ARKIT = "goToARKit"
 let GO_TO_PRODUCT = "ProductsVC"
+let GO_TO_AUTH_VC = "goToAuthVC"
 
 //Cell
 let RUN_LOG_CELL = "RunLogCell"
@@ -22,6 +23,8 @@ let REALM_RUN_CONFIG = "realmRunConfig"
 let AUTH_VC = "AuthVC"
 let LOGIN_VC = "LoginVC"
 let REGISTER_BY_EMAIL = "registerByEmail"
+let AR_VC = "ARVC"
+let CATEGORY_VC = "CategoryVC"
 
 //Cells
 let CATEGORY_CELL = "CategoryCell"

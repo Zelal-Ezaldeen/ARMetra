@@ -54,7 +54,7 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
             
             do {
                 try Auth.auth().signOut()
-                let authVC = self.storyboard?.instantiateViewController(withIdentifier: AUTH_VC) as? AuthVC
+                let authVC = self.storyboard?.instantiateViewController(withIdentifier: CATEGORY_VC) as? CategoryVC
                 self.present(authVC!, animated: true, completion: nil)
             } catch {
                 print(error)

@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import Firebase
 class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
+    var window: UIWindow?
+
     @IBOutlet weak var categoryTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,12 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let category = DataService.instance.getCategories()[indexPath.row]
-        performSegue(withIdentifier: GO_TO_PRODUCT, sender: category)
+        if indexPath.row == 1 {
+           performSegue(withIdentifier: GO_TO_AUTH_VC, sender: category)
+        } else {
+            performSegue(withIdentifier: GO_TO_PRODUCT, sender: category)
+
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

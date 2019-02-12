@@ -9,10 +9,12 @@
 import Foundation
 import Firebase
 
+
 let DB_BASE = Database.database().reference()
 class DataService {
-    static let instance = DataService()
+    var window: UIWindow?
     
+    static let instance = DataService()
     private let categories = [
         Category(title: "ديكورات", imageName: "welcomeBG"),
         Category(title: "فلل افتراضية", imageName: "VR.jpg"),
@@ -22,8 +24,6 @@ class DataService {
     ]
     
     func getCategories() -> [Category] {
-        
-        
         return categories
     }
     
@@ -37,9 +37,9 @@ class DataService {
         Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
         Product(title: "غرف نوم",imageName: "bedRoom1.jpg"),
         Product(title: "غرف طعام",imageName: "foodRoom.jpg"),
-         Product(title: "مطاعم",imageName: "restaurant0.jpg"),
-         Product(title: "مطاعم",imageName: "restaurant1.jpg"),
-         Product(title: "مطاعم",imageName: "restaurant2.jpg")
+        Product(title: "مطاعم",imageName: "restaurant0.jpg"),
+        Product(title: "مطاعم",imageName: "restaurant1.jpg"),
+        Product(title: "مطاعم",imageName: "restaurant2.jpg")
      
     ]
     
@@ -58,7 +58,7 @@ class DataService {
     private let plans = [
         Product(title: "مطاعم",imageName: "restaurant0.jpg"),
         Product(title: "مطاعم",imageName: "restaurant1.jpg"),
-         Product(title: "مطاعم",imageName: "restaurant2.jpg")
+        Product(title: "مطاعم",imageName: "restaurant2.jpg")
         
     ]
     
@@ -72,8 +72,7 @@ class DataService {
         switch title {
         case "ديكورات":
            return  getDecores()
-        case "فلل افتراضية":
-          return  getVRVillas()
+      
         case "واجهات":
           return getDesigns()
         case "استشارات هندسية":
@@ -84,14 +83,17 @@ class DataService {
               return  getDecores()
         }
     }
+      
+      
+        
+    
+    
     
     func getDecores() -> [Product] {
         return decores
     }
     
-    func getVRVillas() -> [Product] {
-        return VRVillas
-    }
+   
     
     func getDesigns() -> [Product] {
         return designs

@@ -31,9 +31,12 @@ class AuthVC: UIViewController {
     }
     
     @IBAction func signInBtnPressed(_ sender: Any) {
-        print("SignIn")
         let loginVC = storyboard?.instantiateViewController(withIdentifier: LOGIN_VC)
         present(loginVC!, animated: true, completion: nil)
+    }
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
    
