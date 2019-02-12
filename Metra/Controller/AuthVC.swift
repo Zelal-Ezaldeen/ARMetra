@@ -17,9 +17,9 @@ class AuthVC: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            dismiss(animated: true, completion: nil)
-        }
+//        if Auth.auth().currentUser != nil {
+//            dismiss(animated: true, completion: nil)
+//        }
     }
     @IBAction func signInWithFacebookBtnPressed(_ sender: Any) {
     }

@@ -20,12 +20,11 @@ class DataService {
         Category(title: "فلل افتراضية", imageName: "VR.jpg"),
         Category(title: "واجهات", imageName: "villa.jpg"),
         Category(title: "استشارات هندسية", imageName: "plan.jpg")
-        
     ]
-    
     func getCategories() -> [Category] {
         return categories
     }
+ 
     
     private let decores = [
         Product(title: "صالة", imageName: "livingRoom0.jpg"),
@@ -86,7 +85,6 @@ class DataService {
         switch title {
         case "ديكورات":
            return  getDecores()
-      
         case "واجهات":
           return getDesigns()
         case "استشارات هندسية":
@@ -111,10 +109,7 @@ class DataService {
 //    func getKidRoom() -> [Product] {
 //        return kidRoom
 //    }
-    func getScenes() -> [Scene] {
-        
-        return scenes
-    }
+   
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_GROUPS = DB_BASE.child("groups")

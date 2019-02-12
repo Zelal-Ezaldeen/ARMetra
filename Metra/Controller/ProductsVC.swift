@@ -12,6 +12,9 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
    //Outlets
     
+    @IBOutlet weak var viewBigImage: UIView!
+    
+    @IBOutlet weak var bigImage: UIImageView!
     @IBOutlet weak var productTitleLbl: UILabel!
     @IBOutlet weak var productsCollection: UICollectionView!
     private(set) public var products = [Product]()
@@ -20,6 +23,7 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         super.viewDidLoad()
         productsCollection.dataSource = self
         productsCollection.delegate = self
+      
     }
     
     func initProducts(category: Category)  {
@@ -38,16 +42,34 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PRODUCT_CELL, for: indexPath) as? ProductCell  {
             let product = products[indexPath.row]
-            
             cell.updateViews(product: product)
-      print(product)
             return cell
         }
       
         return ProductCell()
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let product = products[indexPath.row]
+        viewBigImage.isHidden = false
+        bigImage.isHidden = false
+        bigImage.image = UIImage(named: product.imageName)
+       
+    }
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func backViewBtnPressed(_ sender: Any) {
+        viewBigImage.isHidden = true
+        bigImage.isHidden = true
+    }
+    
+    
+    
+    @IBAction func scaleImage(_ sender: UIPinchGestureRecognizer) {
+        
+        bigImage.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
+    }
+    
 }
