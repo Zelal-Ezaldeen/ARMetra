@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-      //  print(Realm.Configuration.defaultConfiguration.fileURL)
         //Initialise and Configure Firebase
         FirebaseApp.configure()
 //        if Auth.auth().currentUser == nil {
@@ -31,15 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let myDatabase = Database.database().reference()
 //        myDatabase.setValue("We git data")
         
-     
-        
-//        do {
-//             let realm = try Realm()
-//         
-//        } catch {
-//            print("Error intialize Realm, \(error)")
-//        }
-       
+  
         return true
     }
 

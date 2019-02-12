@@ -39,27 +39,41 @@ class DataService {
         Product(title: "غرف طعام",imageName: "foodRoom.jpg"),
         Product(title: "مطاعم",imageName: "restaurant0.jpg"),
         Product(title: "مطاعم",imageName: "restaurant1.jpg"),
-        Product(title: "مطاعم",imageName: "restaurant2.jpg")
+        Product(title: "مطاعم",imageName: "restaurant2.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office0.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office1.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office2.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office3.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office4.jpg"),
+        Product(title: "مكاتب تجارية",imageName: "office5.jpg")
+        
      
     ]
-    
-    private let VRVillas = [
-        Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
-        Product(title: "غرف نوم",imageName: "bedRoom1.jpg")
-        
-        
-    ]
-    
+ 
     private let designs = [
-        Product(title: "غرف طعام",imageName: "foodRoom0.jpg")
-    
+        Product(title: "واجهات",imageName: "design0.jpg"),
+        Product(title: "واجهات",imageName: "design1.jpg"),
+        Product(title: "واجهات",imageName: "design2.jpg"),
+        Product(title: "واجهات",imageName: "design3.jpg"),
+        Product(title: "واجهات",imageName: "design4.jpg"),
+        Product(title: "واجهات",imageName: "design5.jpg"),
+        Product(title: "واجهات",imageName: "design6.jpg"),
+        Product(title: "واجهات",imageName: "design7.jpg"),
+        Product(title: "واجهات",imageName: "design8.jpg"),
+        Product(title: "واجهات",imageName: "design9.jpg"),
+        Product(title: "واجهات",imageName: "design10.jpg"),
+        Product(title: "واجهات",imageName: "design11.jpg"),
+        Product(title: "واجهات",imageName: "design12.jpg"),
+        Product(title: "واجهات",imageName: "design13.jpg"),
+        Product(title: "واجهات",imageName: "design14.jpg"),
+        Product(title: "واجهات",imageName: "design15.jpg")
         ]
     
     private let plans = [
-        Product(title: "مطاعم",imageName: "restaurant0.jpg"),
-        Product(title: "مطاعم",imageName: "restaurant1.jpg"),
-        Product(title: "مطاعم",imageName: "restaurant2.jpg")
-        
+        Product(title: "مخططات",imageName: "plan0.jpg"),
+        Product(title: "مخططات",imageName: "plan1.jpg"),
+        Product(title: "مخططات",imageName: "plan2.jpg"),
+        Product(title: "مخططات",imageName: "plan3.jpg")
     ]
     
     private let kidRoom = [Product]()  //Empty
@@ -83,17 +97,10 @@ class DataService {
               return  getDecores()
         }
     }
-      
-      
-        
-    
-    
     
     func getDecores() -> [Product] {
         return decores
     }
-    
-   
     
     func getDesigns() -> [Product] {
         return designs

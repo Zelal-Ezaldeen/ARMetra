@@ -413,11 +413,11 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صالة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqP-D3-wiG">
-                                                    <rect key="frame" x="36" y="191" width="107" height="69"/>
+                                                    <rect key="frame" x="36" y="191" width="120" height="69"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="69" id="O56-BV-su0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -428,7 +428,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Anu-Of-PwT" secondAttribute="trailing" id="6T0-74-fTu"/>
                                             <constraint firstItem="jqP-D3-wiG" firstAttribute="top" secondItem="Anu-Of-PwT" secondAttribute="bottom" constant="13" id="9uN-kO-ZAm"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="jqP-D3-wiG" secondAttribute="bottom" constant="24" id="Gqa-Ov-ksT"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="jqP-D3-wiG" secondAttribute="trailing" constant="27" id="GwC-TC-rZx"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="jqP-D3-wiG" secondAttribute="trailing" constant="14" id="GwC-TC-rZx"/>
                                             <constraint firstItem="jqP-D3-wiG" firstAttribute="leading" secondItem="yEx-84-9js" secondAttribute="leadingMargin" constant="28" id="Ip3-Ai-Ols"/>
                                             <constraint firstItem="Anu-Of-PwT" firstAttribute="top" secondItem="yEx-84-9js" secondAttribute="top" id="ml8-k3-rsX"/>
                                             <constraint firstItem="Anu-Of-PwT" firstAttribute="leading" secondItem="yEx-84-9js" secondAttribute="leading" id="zX4-uX-rnh"/>
