@@ -37,7 +37,9 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let category = DataService.instance.getCategories()[indexPath.row]
         if indexPath.row == 1 {
+              print("HI")
            performSegue(withIdentifier: GO_TO_AUTH_VC, sender: category)
+          
         } else {
             performSegue(withIdentifier: GO_TO_PRODUCT, sender: category)
 

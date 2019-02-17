@@ -9,16 +9,18 @@
 import UIKit
 import Firebase
 import RealmSwift
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //Initialise and Configure Firebase
         FirebaseApp.configure()
+      
+      
 //        if Auth.auth().currentUser == nil {
 //            //To access the storyboard
 //            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -31,6 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
   
         return true
+    }
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+        -> Bool {
+             print("HTGGG")
+            return GIDSignIn.sharedInstance().handle(url,
+                                                     sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
+           
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -182,17 +182,10 @@
                                                     <action selector="signInWithFacebookBtnPressed:" destination="rPA-zU-1P1" eventType="touchUpInside" id="anh-l8-hZm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRO-mB-R5D">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCB-yo-shz" customClass="GIDSignInButton">
                                                 <rect key="frame" x="0.0" y="173" width="358" height="76.666666666666686"/>
-                                                <color key="backgroundColor" red="0.80784313725490198" green="0.32941176470588235" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                <state key="normal" title="سجل من خلال جوجل">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="signInWithGoogleBtnPressed:" destination="rPA-zU-1P1" eventType="touchUpInside" id="mc5-Cb-pqi"/>
-                                                </connections>
-                                            </button>
+                                                <color key="backgroundColor" red="0.83137254901960778" green="0.23529411764705882" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أو" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-8J-piQ">
                                                 <rect key="frame" x="0.0" y="259.66666666666669" width="358" height="76.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
@@ -280,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jZ-t7-iXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="-1331"/>
+            <point key="canvasLocation" x="-554" y="-509"/>
         </scene>
         <!--CategoryVC-->
         <scene sceneID="q02-0W-qQh">
@@ -525,7 +518,7 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="182.60869565217394" y="-602.00892857142856"/>
+            <point key="canvasLocation" x="-1423" y="195"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="ef2-Cf-sRU">
@@ -660,7 +653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAs-JU-acq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="-173"/>
+            <point key="canvasLocation" x="-3" y="195"/>
         </scene>
         <!--ملفي-->
         <scene sceneID="hzc-v6-99g">
@@ -808,7 +801,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWk-GW-gAN">
-                                <rect key="frame" x="0.0" y="101.33333333333331" width="414" height="549.66666666666674"/>
+                                <rect key="frame" x="0.0" y="101.33333333333334" width="414" height="500.66666666666663"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مترا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Jno-Ee-fXn">
                                 <rect key="frame" x="186.66666666666666" y="52.000000000000007" width="40.666666666666657" height="29.333333333333336"/>
@@ -817,13 +810,13 @@
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ابدأ  بالتحرك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yVl-x4-ule">
-                                <rect key="frame" x="155.33333333333334" y="822" width="103.33333333333334" height="24"/>
+                                <rect key="frame" x="155.33333333333334" y="773" width="103.33333333333334" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmp-4S-gW6">
-                                <rect key="frame" x="171.66666666666666" y="739" width="71" height="71"/>
+                                <rect key="frame" x="171.66666666666666" y="690" width="71" height="71"/>
                                 <state key="normal" image="startRunningButton"/>
                                 <connections>
                                     <segue destination="5aK-TM-NeS" kind="show" id="TLf-Kq-2hq"/>
@@ -1168,7 +1161,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX0-YK-BMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="-940"/>
+            <point key="canvasLocation" x="1083" y="-1080"/>
         </scene>
         <!--RestaurantVC-->
         <scene sceneID="tne-QT-ifu">
@@ -1244,9 +1237,22 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-LW-Hwd">
+                                <rect key="frame" x="328" y="44" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="07D-az-aFZ"/>
+                                    <constraint firstAttribute="width" constant="70" id="42n-9i-Q4o"/>
+                                </constraints>
+                                <state key="normal" image="CloseGreenBtn"/>
+                                <connections>
+                                    <action selector="closeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lx-qQ-ciA"/>
+                                    <action selector="closeBtnPressed:" destination="OX6-gE-ziq" eventType="touchUpInside" id="0JE-ih-IRH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wtz-LW-Hwd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6E2-K9-XBJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wNW-vX-HFH" secondAttribute="bottom" constant="20" id="7lH-Nk-dXC"/>
                             <constraint firstItem="2YB-wi-F8h" firstAttribute="leading" secondItem="wNW-vX-HFH" secondAttribute="trailing" constant="67" id="9ru-Qn-Jlb"/>
                             <constraint firstItem="ms7-n0-yaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EJ1-2p-bsR"/>
@@ -1262,6 +1268,7 @@
                             <constraint firstItem="dEk-RH-wpB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wgS-VQ-ob4"/>
                             <constraint firstItem="wNW-vX-HFH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x1q-UK-goP"/>
                             <constraint firstItem="dEk-RH-wpB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8K-Y6-zDm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wtz-LW-Hwd" secondAttribute="trailing" constant="16" id="zgJ-Es-mfN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -1277,7 +1284,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="9rl-bN-nAE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="-425"/>
+            <point key="canvasLocation" x="2137.68115942029" y="-425.22321428571428"/>
         </scene>
         <!--حسابي-->
         <scene sceneID="eT2-Z5-hjx">
@@ -1421,6 +1428,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ut4-Zt-Mi1"/>
-        <segue reference="3ok-dV-kll"/>
+        <segue reference="Sed-KN-Vkn"/>
     </inferredMetricsTieBreakers>
 </document>

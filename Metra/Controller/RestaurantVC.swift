@@ -10,6 +10,7 @@ import UIKit
 import ARKit
 import Firebase
 import RealmSwift
+import GoogleSignIn
 
 class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
    // Outlets
@@ -46,13 +47,16 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
         }
     }
     
+    @IBAction func closeBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func logOutBtnPressed(_ sender: Any) {
         //Log out user and send them back to the WelcomeVC
         let logoutPopup = UIAlertController(title: "تسجيل الخروج؟", message: "هل تريد تسجيل الخروج؟", preferredStyle: .actionSheet)
         
         let logoutAction = UIAlertAction(title: "تسجيل الخروج؟", style: .destructive) { (buttonTapped) in
-            
             do {
+                self.logoutSocial()
                 try Auth.auth().signOut()
                 let authVC = self.storyboard?.instantiateViewController(withIdentifier: CATEGORY_VC) as? CategoryVC
                 self.present(authVC!, animated: true, completion: nil)
@@ -62,9 +66,29 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
             
         }
       logoutPopup.addAction(logoutAction)
+        
+        let logoutActionCancel = UIAlertAction(title: "إلغاء", style: .cancel) { (buttonTapped) in
+              
+        }
+        logoutPopup.addAction(logoutActionCancel)
+        
         present(logoutPopup, animated: true, completion: nil)
     }
     
+    func logoutSocial() {
+        guard let user = Auth.auth().currentUser else { return }
+        for info in (user.providerData) {
+            switch info.providerID {
+            case GoogleAuthProviderID:
+                GIDSignIn.sharedInstance().signOut()
+                print("google")
+            case FacebookAuthProviderID:
+                print("favebook")
+            default:
+                break
+            }
+        }
+    }
     func addNode() {
        let projectName = projectARName.text!
         //Ardiya Restaurant

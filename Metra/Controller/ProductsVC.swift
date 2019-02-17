@@ -28,10 +28,6 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func initProducts(category: Category)  {
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
-        //productTitleLbl.text = category.title
-        print(category.title)
-     
-      
         
     }
     

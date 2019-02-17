@@ -8,6 +8,10 @@ target 'Metra' do
   # Pods for restaurantArdyia
 pod 'Firebase'
 pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+pod 'FBSDKCoreKit'
+pod 'FBSDKShareKit'
+pod 'FBSDKLoginKit'
 pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'

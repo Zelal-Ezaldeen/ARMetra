@@ -27,7 +27,6 @@
 		C75F628A21EBC52000835FA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75F628921EBC52000835FA8 /* MapKit.framework */; };
 		C75F628C21EBC64500835FA8 /* CurrentMoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628B21EBC64500835FA8 /* CurrentMoveVC.swift */; };
 		C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778EA0E21D94CA600D5F69C /* LoginVC.swift */; };
-		C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */; };
 		C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520D21D95E83005E48B5 /* RegisterVC.swift */; };
 		C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C521021D9F1E5005E48B5 /* Constants.swift */; };
 		C79D214821E72DA7008DBD88 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79D214721E72DA7008DBD88 /* StoreKit.framework */; };
@@ -43,6 +42,7 @@
 		C7F3E99221D34B1400B3BD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E99121D34B1400B3BD58 /* Assets.xcassets */; };
 		C7F3E99521D34B1400B3BD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E99321D34B1400B3BD58 /* LaunchScreen.storyboard */; };
 		C7F3E9A121D3523700B3BD58 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F3E9A021D3523700B3BD58 /* art.scnassets */; };
+		C7F9E71A22196B6000D8F9A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F9E71922196B6000D8F9A4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		C75F628921EBC52000835FA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C75F628B21EBC64500835FA8 /* CurrentMoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMoveVC.swift; sourceTree = "<group>"; };
 		C778EA0E21D94CA600D5F69C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79C520D21D95E83005E48B5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C79C521021D9F1E5005E48B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C79D214721E72DA7008DBD88 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +86,7 @@
 		C7F3E99421D34B1400B3BD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7F3E99621D34B1400B3BD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F3E9A021D3523700B3BD58 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		C7F9E71922196B6000D8F9A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC66168E447FA2A1FB7E261A /* Pods_Metra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4789D59A114A230CBA0A507 /* Pods-Metra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metra.release.xcconfig"; path = "Target Support Files/Pods-Metra/Pods-Metra.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,7 +208,7 @@
 				C7F3E99121D34B1400B3BD58 /* Assets.xcassets */,
 				C7F3E99321D34B1400B3BD58 /* LaunchScreen.storyboard */,
 				C7F3E99621D34B1400B3BD58 /* Info.plist */,
-				C778EA1021D94D4600D5F69C /* GoogleService-Info.plist */,
+				C7F9E71922196B6000D8F9A4 /* GoogleService-Info.plist */,
 				C7F3E9A021D3523700B3BD58 /* art.scnassets */,
 			);
 			path = Metra;
@@ -255,6 +255,7 @@
 				C7F3E98421D34B1300B3BD58 /* Frameworks */,
 				C7F3E98521D34B1300B3BD58 /* Resources */,
 				C4760961E6B5065C4F984821 /* [CP] Embed Pods Frameworks */,
+				AF379A9CA106F304AC8875A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,7 +317,7 @@
 			files = (
 				C7F3E99521D34B1400B3BD58 /* LaunchScreen.storyboard in Resources */,
 				C7F3E9A121D3523700B3BD58 /* art.scnassets in Resources */,
-				C778EA1121D94D4600D5F69C /* GoogleService-Info.plist in Resources */,
+				C7F9E71A22196B6000D8F9A4 /* GoogleService-Info.plist in Resources */,
 				C7F3E99221D34B1400B3BD58 /* Assets.xcassets in Resources */,
 				C7F3E99021D34B1300B3BD58 /* Main.storyboard in Resources */,
 			);
@@ -325,6 +326,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AF379A9CA106F304AC8875A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Metra/Pods-Metra-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metra/Pods-Metra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4760961E6B5065C4F984821 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,8 +357,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Metra/Pods-Metra-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -347,8 +375,13 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
