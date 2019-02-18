@@ -12,12 +12,15 @@ import GoogleSignIn
 
 class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
   //Outlets
+    @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
         GIDSignIn.sharedInstance()?.uiDelegate = self
+        signInButton.style = GIDSignInButtonStyle.iconOnly
+       
       
     }
     override func viewDidAppear(_ animated: Bool) {
