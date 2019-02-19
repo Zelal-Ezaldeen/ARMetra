@@ -182,10 +182,17 @@
                                                     <action selector="signInWithFacebookBtnPressed:" destination="rPA-zU-1P1" eventType="touchUpInside" id="anh-l8-hZm"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCB-yo-shz" customClass="GIDSignInButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekA-yh-itm">
                                                 <rect key="frame" x="0.0" y="173" width="358" height="76.666666666666686"/>
-                                                <color key="backgroundColor" red="0.83137254901960778" green="0.23529411764705882" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
+                                                <color key="backgroundColor" red="0.83137254900000002" green="0.23529411759999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="سجل من خلال جوجل">
+                                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInWithGoogle:" destination="rPA-zU-1P1" eventType="touchUpInside" id="G8v-ee-bjn"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أو" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-8J-piQ">
                                                 <rect key="frame" x="0.0" y="259.66666666666669" width="358" height="76.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
@@ -270,9 +277,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mzr-mG-hUS"/>
                     </view>
-                    <connections>
-                        <outlet property="signInButton" destination="FCB-yo-shz" id="mCw-Hu-wlv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jZ-t7-iXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

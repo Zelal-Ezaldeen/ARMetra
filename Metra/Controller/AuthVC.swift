@@ -9,18 +9,28 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 
 class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
-  //Outlets
+    
+    // Outlets
     @IBOutlet weak var signInButton: GIDSignInButton!
+    
+    // Variables
+    let loginManager = FBSDKLoginManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Google
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
         GIDSignIn.sharedInstance()?.uiDelegate = self
-        signInButton.style = GIDSignInButtonStyle.iconOnly
-       
+    
+        //Facebook
+  
       
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -28,11 +38,28 @@ class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
      //        if Auth.auth().currentUser != nil {
 //            dismiss(animated: true, completion: nil)
 //        }
-    }
+}
+    
+    //Facebook
     @IBAction func signInWithFacebookBtnPressed(_ sender: Any) {
-         GIDSignIn.sharedInstance().signIn()
+     loginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+            if let error = error {
+                debugPrint("Couldn't log to facebook")
+            } else if result!.isCancelled {
+                print("Login was Cancelled")
+            } else {
+                let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.firebaseLogin(credential)
+                let arVC = self.storyboard?.instantiateViewController(withIdentifier: AR_VC) as? RestaurantVC
+                self.present(arVC!, animated: true, completion: nil)
+        }
+        }
+}
+    
+    //Google
+    @IBAction func signInWithGoogle(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
     }
- 
     @IBAction func signInByEmailBtnPressed(_ sender: Any) {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: REGISTER_BY_EMAIL)
         present(loginVC!, animated: true, completion: nil)

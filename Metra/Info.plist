@@ -19,11 +19,9 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.66608555640-or2ve8o62js4ac86b6lj5mht12kahb1s</string>
+				<string>fb2798941740331267</string>
 			</array>
 		</dict>
 		<dict>
@@ -31,13 +29,23 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.ies-constructions.metraApp
-</string>
+				<string>com.googleusercontent.apps.66608555640-or2ve8o62js4ac86b6lj5mht12kahb1s</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>2798941740331267</string>
+	<key>FacebookDisplayName</key>
+	<string>Metra</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>

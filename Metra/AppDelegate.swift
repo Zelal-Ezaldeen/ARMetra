@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import RealmSwift
 import GoogleSignIn
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Initialise and Configure Firebase
         FirebaseApp.configure()
       
+        FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
       
 //        if Auth.auth().currentUser == nil {
 //            //To access the storyboard
@@ -34,12 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
         return true
     }
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:])
         -> Bool {
-             print("HTGGG")
-            return GIDSignIn.sharedInstance().handle(url,
-                                                     sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-                                                     annotation: [:])
+            let returnGoogle = GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+            
+            let returnFB = FBSDKApplicationDelegate.sharedInstance().application(application, open:url, options: options)
+            return returnGoogle || returnFB
            
     }
 
