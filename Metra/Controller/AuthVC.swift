@@ -28,9 +28,6 @@ class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
         GIDSignIn.sharedInstance()?.uiDelegate = self
-    
-        //Facebook
-  
       
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -43,7 +40,7 @@ class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     //Facebook
     @IBAction func signInWithFacebookBtnPressed(_ sender: Any) {
      loginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-            if let error = error {
+        if error != nil {
                 debugPrint("Couldn't log to facebook")
             } else if result!.isCancelled {
                 print("Login was Cancelled")

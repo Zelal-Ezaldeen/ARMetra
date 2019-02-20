@@ -11,6 +11,8 @@ import ARKit
 import Firebase
 import RealmSwift
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
    // Outlets
@@ -19,6 +21,10 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var resetBtn: UIButton!
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var projectARName: UITextField!
+ 
+    // Variables
+    let loginManager = FBSDKLoginManager()
+    
     // To track the device in the World
     let configuration = ARWorldTrackingConfiguration()
     
@@ -81,9 +87,8 @@ class RestaurantVC: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
             switch info.providerID {
             case GoogleAuthProviderID:
                 GIDSignIn.sharedInstance().signOut()
-                print("google")
             case FacebookAuthProviderID:
-                print("favebook")
+               loginManager.logOut()
             default:
                 break
             }
