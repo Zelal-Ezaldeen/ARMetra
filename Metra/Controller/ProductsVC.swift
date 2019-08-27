@@ -17,9 +17,7 @@ class ProductsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
 // Outlets
     @IBOutlet weak var tableView: UITableView!
-   
-  
-    // Variables
+// Variables
     private var products = [Product]()
     private var category: Category!
     private var commentsCollectionRef: CollectionReference!
@@ -55,11 +53,11 @@ class ProductsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         }
     }
     
-    func initProducts(category: Category)  {
-        products = DataService.instance.getProducts(forCategoryTitle: category.title)
-        
-
-    }
+//    func initProducts(category: Category)  {
+//        products = DataService.instance.getProducts(forCategoryTitle: category.title)
+//        
+//
+//    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }

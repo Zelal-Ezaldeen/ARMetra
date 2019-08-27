@@ -42,33 +42,30 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let category = DataService.instance.getCategories()[indexPath.row]
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if user == nil {
-                print("USERRRR")
-                print(user)
-                print("AUTHHH")
-                print(auth)
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let loginVC = storyboard.instantiateViewController(withIdentifier: AUTH_VC)
                 self.present(loginVC, animated: true, completion: nil)
             } else if indexPath.row == 1 {
                self.performSegue(withIdentifier: GO_TO_ARKIT, sender: category)
-            } else if indexPath.row == 2 {
+            } else if indexPath.row == 3 {
                 UIApplication.shared.open(URL(string: "https://ies-constructions.com/canvas.html")! as URL, options: [:], completionHandler: nil)
                 
-            } else {
+            } else if indexPath.row == 0 {
                 self.performSegue(withIdentifier: GO_TO_PRODUCTSVC , sender: category)
+            } else if indexPath.row == 2 {
+                self.performSegue(withIdentifier: GO_TO_DESIGNSVC, sender: category)
             }
-                
-                    })
+            })
        
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let addProductVC = segue.destination as? ProductsVC {
-            assert(sender as? Category != nil)
-            addProductVC.initProducts(category: sender as! Category)
-        }
-       
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let addProductVC = segue.destination as? ProductsVC {
+//            assert(sender as? Category != nil)
+//            addProductVC.initProducts(category: sender as! Category)
+//        }
+//       
+//    }
     
 
 }

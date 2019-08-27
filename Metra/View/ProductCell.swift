@@ -21,11 +21,9 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var numLikesLbl: UILabel!
     @IBOutlet weak var likesImg: UIImageView!
 
-    
 //Varibles
      private var product: Product!
      private var products = [Product]()
- 
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +35,7 @@ class ProductCell: UITableViewCell {
   
     @objc func likeTapped() {
         
-       Firestore.firestore().collection(Products_REF).document(product.documentId)
+    Firestore.firestore().collection(Products_REF).document(product.documentId)
                 .setData([NUM_LIKES : product.numLikes + 1], merge: true)
             }
   

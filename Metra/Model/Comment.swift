@@ -30,7 +30,7 @@ class func parseData(snapshot: QuerySnapshot?) -> [Comment] {
         guard let snap = snapshot else { return comments }
         for document in snap.documents {
             let data = document.data()
-            let username = data[USERNAME] as? String ?? "Anonymous"
+            let username = data[USERNAME] as? String ?? "Mohammad"
             let timestamp = data[TIMESTAMP] as? Date ?? Date()
             let commentTxt = data[COMMENT_TXT] as? String ?? ""
             let documentId = document.documentID

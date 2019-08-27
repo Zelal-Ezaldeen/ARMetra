@@ -13,6 +13,8 @@
 		C70E86AF21EE60C400729707 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86AE21EE60C400729707 /* Location.swift */; };
 		C70E86B121EE647900729707 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E86B021EE647900729707 /* RealmConfig.swift */; };
 		C70FD2F1220AE4D600FA4A5A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FD2F0220AE4D600FA4A5A /* Scene.swift */; };
+		C710A8982312D857001466EA /* DesignsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710A8972312D857001466EA /* DesignsVC.swift */; };
+		C710A89A2312E452001466EA /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710A8992312E452001466EA /* Design.swift */; };
 		C714315221E491BE005F4F1E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C714315121E491BE005F4F1E /* ErrorView.swift */; };
 		C71487652305AE1E0093C139 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71487642305AE1E0093C139 /* UIViewExt.swift */; };
 		C71487672305B1640093C139 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71487662305B1640093C139 /* Extensions.swift */; };
@@ -29,6 +31,10 @@
 		C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628721EBC1A200835FA8 /* LocationVC.swift */; };
 		C75F628A21EBC52000835FA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75F628921EBC52000835FA8 /* MapKit.framework */; };
 		C75F628C21EBC64500835FA8 /* CurrentMoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F628B21EBC64500835FA8 /* CurrentMoveVC.swift */; };
+		C76E025F2313F32F000B97E8 /* DesignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E025E2313F32F000B97E8 /* DesignCell.swift */; };
+		C76E026123141869000B97E8 /* DesignCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E026023141869000B97E8 /* DesignCommentsVC.swift */; };
+		C76E026323142365000B97E8 /* DesignCommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E026223142365000B97E8 /* DesignCommentsCell.swift */; };
+		C76E026523157F71000B97E8 /* UpdateDesignCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E026423157F71000B97E8 /* UpdateDesignCommentVC.swift */; };
 		C7736F1D22F5D7DA00FB9C4A /* UpdateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7736F1C22F5D7DA00FB9C4A /* UpdateCommentVC.swift */; };
 		C778EA0F21D94CA600D5F69C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778EA0E21D94CA600D5F69C /* LoginVC.swift */; };
 		C79C520E21D95E83005E48B5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C520D21D95E83005E48B5 /* RegisterVC.swift */; };
@@ -57,6 +63,8 @@
 		C70E86AE21EE60C400729707 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C70E86B021EE647900729707 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		C70FD2F0220AE4D600FA4A5A /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C710A8972312D857001466EA /* DesignsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsVC.swift; sourceTree = "<group>"; };
+		C710A8992312E452001466EA /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		C714315121E491BE005F4F1E /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C714315321E4A547005F4F1E /* Metra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metra.entitlements; sourceTree = "<group>"; };
 		C71487642305AE1E0093C139 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 		C75F628721EBC1A200835FA8 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		C75F628921EBC52000835FA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C75F628B21EBC64500835FA8 /* CurrentMoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMoveVC.swift; sourceTree = "<group>"; };
+		C76E025E2313F32F000B97E8 /* DesignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCell.swift; sourceTree = "<group>"; };
+		C76E026023141869000B97E8 /* DesignCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCommentsVC.swift; sourceTree = "<group>"; };
+		C76E026223142365000B97E8 /* DesignCommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCommentsCell.swift; sourceTree = "<group>"; };
+		C76E026423157F71000B97E8 /* UpdateDesignCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDesignCommentVC.swift; sourceTree = "<group>"; };
 		C7736F1C22F5D7DA00FB9C4A /* UpdateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentVC.swift; sourceTree = "<group>"; };
 		C778EA0E21D94CA600D5F69C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C79C520D21D95E83005E48B5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -129,6 +141,7 @@
 				C7DED93722115354001F0BDE /* Category.swift */,
 				C7DED93B221171DB001F0BDE /* Product.swift */,
 				C723CE9A22CF778000E793A9 /* Comment.swift */,
+				C710A8992312E452001466EA /* Design.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +180,8 @@
 				C7DED93522109ECA001F0BDE /* CategoryCell.swift */,
 				C723CE9822CF776100E793A9 /* CommentCell.swift */,
 				C7E13E8422DA285400E2732D /* ProductCell.swift */,
+				C76E025E2313F32F000B97E8 /* DesignCell.swift */,
+				C76E026223142365000B97E8 /* DesignCommentsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +251,9 @@
 				C7DED93D22117980001F0BDE /* ProductsVC.swift */,
 				C723CE9C22D1E8C100E793A9 /* CommentsVC.swift */,
 				C7736F1C22F5D7DA00FB9C4A /* UpdateCommentVC.swift */,
+				C710A8972312D857001466EA /* DesignsVC.swift */,
+				C76E026023141869000B97E8 /* DesignCommentsVC.swift */,
+				C76E026423157F71000B97E8 /* UpdateDesignCommentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,9 +415,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71487652305AE1E0093C139 /* UIViewExt.swift in Sources */,
+				C710A89A2312E452001466EA /* Design.swift in Sources */,
+				C76E026123141869000B97E8 /* DesignCommentsVC.swift in Sources */,
 				C75F628621EB583800835FA8 /* MoveLogVC.swift in Sources */,
 				C748457C21E344C400026049 /* AuthVC.swift in Sources */,
 				C75F628421EB56B200835FA8 /* BeginMoveVC.swift in Sources */,
+				C710A8982312D857001466EA /* DesignsVC.swift in Sources */,
 				C7F3E98D21D34B1300B3BD58 /* RestaurantVC.swift in Sources */,
 				C7DED93622109ECA001F0BDE /* CategoryCell.swift in Sources */,
 				C79C521121D9F1E5005E48B5 /* Constants.swift in Sources */,
@@ -407,11 +428,14 @@
 				C75F628C21EBC64500835FA8 /* CurrentMoveVC.swift in Sources */,
 				C70E86AD21EDF01600729707 /* RunLogCell.swift in Sources */,
 				C7E13E8522DA285500E2732D /* ProductCell.swift in Sources */,
+				C76E025F2313F32F000B97E8 /* DesignCell.swift in Sources */,
 				C70E86B121EE647900729707 /* RealmConfig.swift in Sources */,
 				C7DED93822115354001F0BDE /* Category.swift in Sources */,
+				C76E026523157F71000B97E8 /* UpdateDesignCommentVC.swift in Sources */,
 				C7F3E98B21D34B1300B3BD58 /* AppDelegate.swift in Sources */,
 				C748457A21E289B100026049 /* DataService.swift in Sources */,
 				C7736F1D22F5D7DA00FB9C4A /* UpdateCommentVC.swift in Sources */,
+				C76E026323142365000B97E8 /* DesignCommentsCell.swift in Sources */,
 				C70FD2F1220AE4D600FA4A5A /* Scene.swift in Sources */,
 				C72AE2F921F1C64500056E4A /* MeVC.swift in Sources */,
 				C75F628821EBC1A200835FA8 /* LocationVC.swift in Sources */,

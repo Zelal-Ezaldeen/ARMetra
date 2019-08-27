@@ -17,6 +17,9 @@ let GO_TO_LOGINVC = "goToLoginVC"
 let FROM_COMMENTSVC_TO_PRODUCTVC = "fromCommentsToProductsVC"
 let GO_TO_CATEGORYVC = "goToCategoryVC"
 let GO_TO_EDIT_COMMENT = "toEditComment"
+let GO_TO_DESIGNSVC = "toDesignsVC"
+let GO_TO_DESIGNCOMMENTSVC = "goToDesignCommentsVC"
+let GO_TO_EDIT_DESIGNCOMMENT = "toUpdateDesignCommentVC"
 
 //Ralm
 let REALM_QUEUE = DispatchQueue(label: "realmQueue")
@@ -35,22 +38,26 @@ let BIG_IMAGE_VC = "BigImageVC"
 
 
 
+
 //Cells
 let CATEGORY_CELL = "CategoryCell"
 let PRODUCT_CELL = "ProductCell"
 let RUN_LOG_CELL = "RunLogCell"
 let COMMENT_CELL = "commentCell"
+let DESIGN_CELL = "designCell"
+let DESIGN_COMMENT_CELL = "designCommentCell"
 
 
 //Database
 let Products_REF = "products"
+let DESIGNS_REF = "designs"
 let NUM_COMMENTS = "numComments"
 let NUM_LIKES = "numLikes"
 let COMMENT_TXT = "commentTxt"
 let TIMESTAMP = "timestamp"
 let USERNAME = "username"
 let PRODUCT_IMG = "productImg"
-
+let DESIGN_IMG = "designImg"
 let COMMENTS_REF = "comments"
 let USERS_REF = "users"
 let DATE_CREATED = "dateCreated"

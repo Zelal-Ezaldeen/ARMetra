@@ -21,7 +21,7 @@ class DataService {
     private let categories = [
         Category(title: "ديكورات", imageName: "welcomeBG"),
         Category(title: "فلل افتراضية", imageName: "VR.jpg"),
-       // Category(title: "واجهات", imageName: "villa.jpg"),
+        Category(title: "واجهات", imageName: "villa.jpg"),
        // Category(title: "استشارات هندسية", imageName: "plan.jpg"),
         Category(title: "صمم بيتك بنفسك", imageName: "draw-your-home.png"),
        
@@ -32,47 +32,15 @@ class DataService {
  
     
     private let decores = [
-        Product(username: "Zelal", commentTxt: "This is awsome", numLikes: 7, numComments: 0, timeStamp: Date(), productImage: "livingRoom0.jpg", documentId: "00", userId: Auth.auth().currentUser?.uid ?? ""),
-//         Product(username: "Mohammad", commentTxt: "وين مكتبكم؟", numLikes: 3, numComments: 0, timeStamp: Date(), productImage: "livingRoom1.jpg", documentId: "01", userId: Auth.auth().currentUser?.uid ?? ""),
-//        Product(title: "صالة", imageName: "livingRoom2.jpg"),
-//        Product(title: "صالة", imageName: "livingRoom3.jpg"),
-//        Product(title: "صالة", imageName: "livingRoom4.jpg"),
-//        Product(title: "صالة", imageName: "livingRoom5.jpg"),
-//        Product(title: "غرف نوم",imageName: "bedRoom0.jpg"),
-//        Product(title: "غرف نوم",imageName: "bedRoom1.jpg"),
-//        Product(title: "غرف طعام",imageName: "foodRoom.jpg"),
-//        Product(title: "مطاعم",imageName: "restaurant0.jpg"),
-//        Product(title: "مطاعم",imageName: "restaurant1.jpg"),
-//        Product(title: "مطاعم",imageName: "restaurant2.jpg"),
-//        Product(title: "مكاتب تجارية",imageName: "office0.jpg"),
-//        Product(title: "مكاتب تجارية",imageName: "office1.jpg"),
-//        Product(title: "مكاتب تجارية",imageName: "office2.jpg"),
-//        Product(title: "مكاتب تجارية",imageName: "office3.jpg"),
-//        Product(title: "مكاتب تجارية",imageName: "office4.jpg"),
+        Product(username: "Zelal", commentTxt: "This is ", numLikes: 7, numComments: 0, timeStamp: Date(), productImage: "livingRoom0.jpg", documentId: "00", userId: Auth.auth().currentUser?.uid ?? ""),
+
         Product(username: "Aheen", commentTxt: "this is just beautiful..", numLikes: 3, numComments: 0,  timeStamp: Date(), productImage: "livingRoom1.jpg", documentId: "2", userId: Auth.auth().currentUser?.uid ?? "")
-//        (title: "مكاتب تجارية",imageName: "office5.jpg", commentTxt: "haaaaaay")
-        
-     
+
     ]
  
     private let designs = [
         Product(username: "Hanan", commentTxt: "T##String", numLikes: 3, numComments: 0,  timeStamp: Date(), productImage: "design0.jpg", documentId: "", userId: Auth.auth().currentUser?.uid ?? ""),
-//        (title: "واجهات",imageName: "design0.jpg", commentTxt: "nooooo"),
-//        Product(title: "واجهات",imageName: "design1.jpg"),
-//        Product(title: "واجهات",imageName: "design2.jpg"),
-//        Product(title: "واجهات",imageName: "design3.jpg"),
-//        Product(title: "واجهات",imageName: "design4.jpg"),
-//        Product(title: "واجهات",imageName: "design5.jpg"),
-//        Product(title: "واجهات",imageName: "design6.jpg"),
-//        Product(title: "واجهات",imageName: "design7.jpg"),
-//        Product(title: "واجهات",imageName: "design8.jpg"),
-//        Product(title: "واجهات",imageName: "design9.jpg"),
-//        Product(title: "واجهات",imageName: "design10.jpg"),
-//        Product(title: "واجهات",imageName: "design11.jpg"),
-//        Product(title: "واجهات",imageName: "design12.jpg"),
-//        Product(title: "واجهات",imageName: "design13.jpg"),
-//        Product(title: "واجهات",imageName: "design14.jpg"),
-//        Product(title: "واجهات",imageName: "design15.jpg", commentTxt: "oooo")
+
         ]
     
     private let plans = [
